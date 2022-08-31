@@ -3,7 +3,7 @@ layout: page
 title: Chess
 permalink: /chess/
 ---
-
+Chess is cool
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
