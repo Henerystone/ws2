@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "Chess Quiz two",
             "content": "Quiz = ({ &quot;How many spaces can a pawn move on its first turn?&quot;: &quot;2&quot;, &quot;How many spaces can a pawn move on its second turn?&quot;: &quot;1&quot;, &quot;How many pawns exist on one side inn a chess game?&quot;: &quot;8&quot; }) correct = 0 for key, value in Quiz.items(): questions = input(key) if questions == value: print(&quot;Correct&quot;) correct+=1 else: print(&quot;Incorrect&quot;) print(&quot;Score: &quot;,correct) .",
             "url": "https://henerystone.github.io/ws2/2022/09/01/quiz.html",
             "relUrl": "/2022/09/01/quiz.html",
@@ -35,7 +35,7 @@
   
     
         ,"post3": {
-            "title": "Title",
+            "title": "Dictionary but Chess",
             "content": "InfoDb = [] Name = input(&quot;First Name: &quot;) Lastn = input(&quot;Last Name: &quot;) rank = input(&quot;What is your chess ranking? &quot;) # InfoDB is a data structure with expected Keys and Values # Append to List a Dictionary of key/values related to a person and cars InfoDb.append({ &quot;FirstName&quot;: Name, &quot;LastName&quot;: Lastn, &quot;Ranking&quot;: [rank] }) # Append to List a 2nd Dictionary of key/values InfoDb.append({ &quot;FirstName&quot;: &quot;Barry&quot;, &quot;LastName&quot;: &quot;Smith&quot;, &quot;Class&quot;: &quot;APCSP&quot;, &quot;Grade&quot;: &quot;Freshman&quot;, &quot;Favorite Food&quot;: [&quot;Pizza&quot;] }) # Print the data structure print(InfoDb) . [{&#39;FirstName&#39;: &#39;g&#39;, &#39;LastName&#39;: &#39;h&#39;, &#39;Ranking&#39;: [&#39;k&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;Class&#39;: &#39;APCSP&#39;, &#39;Grade&#39;: &#39;Freshman&#39;, &#39;Favorite Food&#39;: [&#39;Pizza&#39;]}] .",
             "url": "https://henerystone.github.io/ws2/2022/09/01/Info.html",
             "relUrl": "/2022/09/01/Info.html",
