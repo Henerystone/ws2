@@ -25,7 +25,7 @@ title: Chess points
         <td>9 points</td>
         <td>5 points</td>
         <td>3 points</td>
-        <td>TBD</td>
+        <td>3 points</td>
     </tr>
 
     <tr>
