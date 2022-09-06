@@ -9,20 +9,21 @@ title: Chess points
 
 <table>
     <tr>
-     <th>Piece</th>
+     <th>Piece/Point</th>
+     <th>King</th>
+     <th>Queen</th>
+     <th>Rook</th>
+     <th>Knight</th>
+     <th>Bishop</th>
     </tr>
 
     <tr>
         <td>
-            Points
+             Points
         </td>
-        <td>Queen, 9 points</td>
-        <td>
-            <a href="{{site.baseurl}}/collegeboard/bria">How I got a  5!</a>
-        </td>
-        <td>
-            <a href="{{site.baseurl}}/collegeboard/create">Create Performance Task</a>
-        </td>
+        <td>Infinity - you win!</td>
+        <td>9 points</td>
+        <td>5 points</td>
         <td>
             <a href="{{site.baseurl}}/techtalk/javascript">JavaScript Tutorial</a>
             <br>
