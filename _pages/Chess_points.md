@@ -15,6 +15,7 @@ title: Chess points
      <th>Rook</th>
      <th>Knight</th>
      <th>Bishop</th>
+     <th>Pawn</th>
     </tr>
 
     <tr>
@@ -26,6 +27,7 @@ title: Chess points
         <td>5 points</td>
         <td>3 points</td>
         <td>3 points</td>
+        <td>1 point</td>
     </tr>
 </table>
     
