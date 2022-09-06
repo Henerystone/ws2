@@ -24,7 +24,7 @@ title: Chess points
         <td>Infinity - you win!</td>
         <td>9 points</td>
         <td>5 points</td>
-        <td></td>
+        <td>3 points</td>
         <td>TBD</td>
     </tr>
 
