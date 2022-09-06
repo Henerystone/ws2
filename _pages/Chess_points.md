@@ -24,11 +24,7 @@ title: Chess points
         <td>Infinity - you win!</td>
         <td>9 points</td>
         <td>5 points</td>
-        <td>
-            <a href="{{site.baseurl}}/techtalk/javascript">JavaScript Tutorial</a>
-            <br>
-            <a href="{{site.baseurl}}/techtalk/applab">Program Design with AppLab</a>
-        </td>
+        <td></td>
         <td>TBD</td>
     </tr>
 
