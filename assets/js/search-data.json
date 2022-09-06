@@ -84,7 +84,7 @@
   
       ,"page2": {
           "title": "Chess points",
-          "content": "Introduction to Points of Chess Pieces . These are the points offered by the capture of each chess piece. . Piece/Point King Queen Rook Knight Bishop . Points | Infinity - you win! | 9 points | 5 points | 3 points | 3 points | .",
+          "content": "Introduction to Points of Chess Pieces . These are the points offered by the capture of each chess piece. . Piece/Point King Queen Rook Knight Bishop Pawn . Points | Infinity - you win! | 9 points | 5 points | 3 points | 3 points | 1 point | .",
           "url": "https://henerystone.github.io/ws2/chessp",
           "relUrl": "/chessp",
           "date": ""
