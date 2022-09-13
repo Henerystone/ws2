@@ -35,17 +35,6 @@
   
     
         ,"post3": {
-            "title": "App Chess quiz",
-            "content": "This is a Chess quiz made in Code.org with javascript block code. The chess quiz is a quiz about some of the more advanced principles of chess. It questions the user about all the advanced aspects of chess and some more. The quiz contains 3 questions with interesting pictures and backgrounds, offering a scam prize at the end. A fun and interactive quiz to waste time with. . !(Chess_quiz.png) . Steps: . 1) Design - Several &quot;on event&quot; functions that add simplicity in the program. 2) Brainstorm - Brainstorm and come up with the idea of the quiz questions. 3) Implementation - Integrate the quiz questions with the code. 4) Finishing - Clean up the code and finish the program. . Problems: . Technical and understanding issues were frequent:experimentation and brainstorming cleared doubts and problems with code and understanding. . Link to app: . https://studio.code.org/projects/applab/sDfuUPMCN4YWUzTMEib8_75gHe-4DmruDFdt0wbY-7k/edit .",
-            "url": "https://henerystone.github.io/ws2/chesscode/app",
-            "relUrl": "/chesscode/app",
-            "date": " • Sep 12, 2022"
-        }
-        
-    
-  
-    
-        ,"post4": {
             "title": "Dictionary but Chess",
             "content": "InfoDb = [] Name = input(&quot;First Name: &quot;) Lastn = input(&quot;Last Name: &quot;) rank = input(&quot;What is your chess ranking? &quot;) # InfoDB is a data structure with expected Keys and Values # Append to List a Dictionary of key/values related to a person and cars InfoDb.append({ &quot;FirstName&quot;: Name, &quot;LastName&quot;: Lastn, &quot;Ranking&quot;: [rank] }) # Append to List a 2nd Dictionary of key/values InfoDb.append({ &quot;FirstName&quot;: &quot;Barry&quot;, &quot;LastName&quot;: &quot;Smith&quot;, &quot;Class&quot;: &quot;APCSP&quot;, &quot;Grade&quot;: &quot;Freshman&quot;, &quot;Favorite Food&quot;: [&quot;Pizza&quot;] }) # Print the data structure print(InfoDb) . [{&#39;FirstName&#39;: &#39;g&#39;, &#39;LastName&#39;: &#39;h&#39;, &#39;Ranking&#39;: [&#39;k&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;Class&#39;: &#39;APCSP&#39;, &#39;Grade&#39;: &#39;Freshman&#39;, &#39;Favorite Food&#39;: [&#39;Pizza&#39;]}] .",
             "url": "https://henerystone.github.io/ws2/chesscode/info",
@@ -56,7 +45,7 @@
     
   
     
-        ,"post5": {
+        ,"post4": {
             "title": "Chess Guide",
             "content": "This is a guide on how to play chess. . Chess is an incredibly strategic game that is played by millions of people world wide. Chess can get incredibly advanced but one must start with the basics. .",
             "url": "https://henerystone.github.io/ws2/chess/instruct",
@@ -67,7 +56,7 @@
     
   
     
-        ,"post6": {
+        ,"post5": {
             "title": "Chess is cool",
             "content": "toc: true | comments: true | permalink: /chesscode/cool | categories: [chesscode] | . Chess is cool . This is a Chess quiz: 3 questions shall be asked. Try to get them all correct. . import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg rsp = question_with_response(&quot;What is a king?&quot;) if rsp == &quot;main piece in chess&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the queen placed?&quot;) if rsp == &quot;next to the king&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the rook placed?&quot;) if rsp == &quot;at the ends of the board&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, shreyas running /home/shreyas/anaconda3/bin/python You will be asked 3 questions. Question: Are you ready to take a test? Answer: yes Question: What is a king? That is incorrect! Question: Where is the queen placed? That is incorrect! Question: Where is the rook placed? That is incorrect! shreyas you scored 0/3 .",
             "url": "https://henerystone.github.io/ws2/2022/09/12/Bash_note.html",
