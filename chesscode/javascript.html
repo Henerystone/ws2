@@ -14,11 +14,11 @@
 <meta property="og:url" content="https://henerystone.github.io/ws2/chesscode/javascript" />
 <meta property="og:site_name" content="Shreyas Sarurkar Fastpages Project" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-09-27T00:00:00-05:00" />
+<meta property="article:published_time" content="2022-09-28T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Javascript and Chess" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-27T00:00:00-05:00","datePublished":"2022-09-27T00:00:00-05:00","description":"The Fastpages of a student in AP Computer Science Principles.","headline":"Javascript and Chess","mainEntityOfPage":{"@type":"WebPage","@id":"https://henerystone.github.io/ws2/chesscode/javascript"},"url":"https://henerystone.github.io/ws2/chesscode/javascript"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-28T00:00:00-05:00","datePublished":"2022-09-28T00:00:00-05:00","description":"The Fastpages of a student in AP Computer Science Principles.","headline":"Javascript and Chess","mainEntityOfPage":{"@type":"WebPage","@id":"https://henerystone.github.io/ws2/chesscode/javascript"},"url":"https://henerystone.github.io/ws2/chesscode/javascript"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/ws2/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://henerystone.github.io/ws2/feed.xml" title="Shreyas Sarurkar Fastpages Project" /><link rel="shortcut icon" type="image/x-icon" href="/ws2/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,8 +73,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Javascript and Chess</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-27T00:00:00-05:00" itemprop="datePublished">
-        Sep 27, 2022
+    <h1 class="post-title p-name" itemprop="name headline">Javascript and Chess</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-28T00:00:00-05:00" itemprop="datePublished">
+        Sep 28, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -161,23 +161,24 @@ window.onload = wrap_img;
     <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
 <span class="p">}</span>
 
+<span class="kd">var</span> <span class="nx">chess_players</span> <span class="o">=</span> <span class="p">[</span> 
+  <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Magnus Carlsen"</span><span class="p">,</span><span class="mf">2856</span><span class="p">,</span> <span class="mf">26</span><span class="p">),</span>
+  <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Ding Liren"</span><span class="p">,</span><span class="mf">2811</span><span class="p">,</span><span class="mf">13</span><span class="p">),</span>
+  <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Ian Nepomniachtchi"</span><span class="p">,</span><span class="mf">2793</span><span class="p">,</span><span class="mf">28</span><span class="p">),</span>
+<span class="p">];</span>
 
-<span class="kd">var</span> <span class="nx">chess_playersa</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Magnus Carlsen"</span><span class="p">,</span><span class="mf">2856</span><span class="p">,</span> <span class="mf">26</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">chess_playersb</span><span class="o">=</span>    <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Ding Liren"</span><span class="p">,</span><span class="mf">2811</span><span class="p">,</span><span class="mf">13</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">chess_playersc</span><span class="o">=</span>   <span class="k">new</span> <span class="nx">Chess</span><span class="p">(</span><span class="s2">"Ian Nepomniachtchi"</span><span class="p">,</span><span class="mf">2793</span><span class="p">,</span><span class="mf">28</span><span class="p">);</span>
+<span class="kd">function</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="nx">chess_play</span><span class="p">){</span> 
 
+  <span class="nx">chess_play</span><span class="p">.</span><span class="nx">setExp</span><span class="p">(</span><span class="s2">"Grandmaster"</span><span class="p">);</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">chess_play</span> <span class="o">=</span> <span class="nx">chess_play</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">Leaderboard</span> <span class="o">=</span> <span class="p">[</span><span class="nx">chess_play</span><span class="p">];</span>
 
-<span class="nx">chess_playersa</span><span class="p">.</span><span class="nx">setExp</span><span class="p">(</span><span class="s2">"Grandmaster"</span><span class="p">);</span>
-<span class="nx">chess_playersb</span><span class="p">.</span><span class="nx">setExp</span><span class="p">(</span><span class="s2">"Grandmaster"</span><span class="p">);</span>
-<span class="nx">chess_playersc</span><span class="p">.</span><span class="nx">setExp</span><span class="p">(</span><span class="s2">"Grandmaster"</span><span class="p">);</span>
+  
+  <span class="k">this</span><span class="p">.</span><span class="nx">json</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">classroom</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">Chess</span> <span class="p">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">json</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">Chess</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">()));</span>
+<span class="p">}</span>
 
-<span class="nx">type</span><span class="p">(</span><span class="nx">chess_playersa</span><span class="p">);</span>
-
-<span class="nx">type</span><span class="p">(</span><span class="nx">chess_playersb</span><span class="p">);</span>
-
-<span class="nx">type</span><span class="p">(</span><span class="nx">chess_playersc</span><span class="p">);</span>
-
-
+<span class="nx">leaders</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Leaderboard</span><span class="p">(</span><span class="nx">chess_players</span><span class="p">)</span>
 
 <span class="nx">Chess</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
@@ -193,7 +194,7 @@ window.onload = wrap_img;
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Years Played"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;th&gt;&lt;mark&gt;"</span> <span class="o">+</span> <span class="s2">"Experience"</span> <span class="o">+</span> <span class="s2">"&lt;/mark&gt;&lt;/th&gt;"</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;/tr&gt;"</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">leaders</span><span class="p">.</span><span class="nx">classroom</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;tr&gt;"</span><span class="p">;</span>
       <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
       <span class="nx">body</span> <span class="o">+=</span> <span class="s2">"&lt;td&gt;"</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">rank</span> <span class="o">+</span> <span class="s2">"&lt;/td&gt;"</span><span class="p">;</span>
@@ -212,7 +213,7 @@ window.onload = wrap_img;
   
   <span class="p">};</span>
   
-<span class="nx">C</span>
+  <span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">leaders</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
 </pre></div>
 
     </div>
