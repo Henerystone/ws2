@@ -254,22 +254,49 @@ Iteration and loops go together like bread and butter.</li>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">"what is a list?"</span><span class="p">,</span><span class="s2">"a set of objects"</span>
-    <span class="s2">"what is an iteration"</span><span class="p">,</span> <span class="s2">"a loop"</span>
-    <span class="s2">"what functions can you use for lists and iterations"</span><span class="p">,</span> <span class="s2">"append, pop"</span>
+    <span class="p">(</span><span class="s2">"what is a list?"</span><span class="p">,</span><span class="s2">"a set of objects"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"what is an iteration"</span><span class="p">,</span> <span class="s2">"a loop"</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">"what functions can you use for lists and iterations"</span><span class="p">,</span> <span class="s2">"append, pop"</span><span class="p">)</span>
 <span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">questionloop</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">questions</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">questions</span><span class="p">)):</span>
         <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="n">i2</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="p">(</span><span class="n">questions</span><span class="p">(</span><span class="n">i</span><span class="p">)(</span><span class="mi">2</span><span class="p">)):</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"correct"</span><span class="p">)</span>
+            
+<span class="n">questionloop</span><span class="p">()</span>
         
-    <span class="c1">#make an iterative function to ask the questions</span>
-    <span class="c1">#this can be any loop you want as long as it works!</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 13&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span>         if ans == (questions(i)(2)):
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>             print("correct")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> questionloop()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb Cell 6</span> in <span class="ansi-cyan-fg">questionloop</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> for i in range(len(questions)):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span>     ans = input(i)
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span>     if ans == (questions(i)(2)):
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/8-10.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>         print("correct")
+
+<span class="ansi-red-fg">TypeError</span>: 'list' object is not callable</pre>
+</div>
+</div>
+
 </div>
 </div>
 
