@@ -2,6 +2,182 @@
   
     
         "post0": {
+            "title": "Chess Quiz two",
+            "content": "Quiz = ({ &quot;How many spaces can a pawn move on its first turn?&quot;: &quot;2&quot;, &quot;How many spaces can a pawn move on its second turn?&quot;: &quot;1&quot;, &quot;How many pawns exist on one side inn a chess game?&quot;: &quot;8&quot; }) correct = 0 for key, value in Quiz.items(): questions = input(key) if questions == value: print(&quot;Correct&quot;) correct+=1 else: print(&quot;Incorrect&quot;) print(&quot;Score: &quot;,correct) .",
+            "url": "https://henerystone.github.io/ws2/chesscode/chessquiz",
+            "relUrl": "/chesscode/chessquiz",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
+            "title": "Psycology and the good life",
+            "content": "The video talks about stress in a college environment and how to relive the stress that occurs. Stress is most common in college students due to the fact that they are ovewhelmed and anxious. To relive stress, one must take a break from their daily life and take some time to do what one loves. I personally like to take time to read a book or play video games. This helps me relax and destress myself .",
+            "url": "https://henerystone.github.io/ws2/psycology/other",
+            "relUrl": "/psycology/other",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post2": {
+            "title": "12-13 HW",
+            "content": "Take some additional notes that you would like here for 3.12 and 3.13. We will be looking for additional notes from the presentation. . What are procedures? . Fill in the blanks please: . Procedure: a named group of instructions that have paramaters and return values . Parameters: input values of a procedure . Arguments: specify values of the paramaters when the procedure is called . Modularity: An splitting large procedures into smaller ones with more uses . Procedural Abstraction: name for a process that allow a procedure to be used by only knowing what it does . Return: sends the output of the procedure to where it was called . What are some other names for procedures?: functions . Why are procedures effective?: procedures make code more effective and efficient by reducing the time to write code. . Challenge 1 below: Add the command that will call the procedure. . def DecimalToBinary(num): strs = &quot;&quot; while num: # if (num &amp; 1) = 1 if (num &amp; 1): strs += &quot;1&quot; # if (num &amp; 1) = 0 else: strs += &quot;0&quot; # right shift by 1 num &gt;&gt;= 1 return strs # function to reverse the string def reverse(strs): print(strs[::-1]) # Driver Code num = 67 print(&quot;Binary of num 67 is:&quot;, end=&quot; &quot;) reverse(DecimalToBinary(num)) . Binary of num 67 is: 1000011 . Challenge 2 below: Complete the Min and Max procedure in either JavaScript and Python using the instructions from the JavaScript page. (JavaScript will get you a extra 0.1) . function min(numa, numb) { if(numa&gt;numb){ console.log(numa+&quot; is the larger number&quot;) } else{ console.log(numb+&quot; is the larger number&quot;) } } a = 5 b = 2 min(a,b); . 5 is the larger number . Homework/Hacks: For the hw, you have two options, easy or hard. The easy hack is for a 2.7 + extra work for the full 3. The easy hack is simply creating your own procedure with your own creativity. Since there is a lot of leeway for this one, you must do additional work to get a 3. For the hard hack, below is the start to a character to binary convertor. This is just a template, but the goal is to translate &quot;APCSP&quot; into binary. You can delete the existing code if you want. The only contraint is that you must use a procedure. Doing this will get you a 3. . import sys as s def organise(): print(&quot;What would you like to organise&quot;) ask = input() if ask==&quot;nothing&quot;: s.exit() elif ask==&quot;something&quot;: while ask != &quot;stop&quot;: ask = input() if ask!=&quot;stop&quot;: print(ask) else: print(&quot;Excuse moi?&quot;) organise() . What would you like to organise math science .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/notetemplate.html",
+            "relUrl": "/2022/12/14/notetemplate.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post3": {
+            "title": "Notes/Vocab",
+            "content": "",
+            "url": "https://henerystone.github.io/ws2/techtalk/api",
+            "relUrl": "/techtalk/api",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post4": {
+            "title": "API",
+            "content": "import requests url = &quot;https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary&quot; x = input(&quot;&quot;) querystring = {&quot;word&quot;:x} headers = { &quot;X-RapidAPI-Key&quot;: &quot;dee5dcce83msh780914d639facb7p1f43c5jsn4c4a7717bb03&quot;, &quot;X-RapidAPI-Host&quot;: &quot;dictionary-by-api-ninjas.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers, params=querystring) print(response.text) . {&#34;definition&#34;: &#34;See Brite, v. i. n n1. Radiating or reflecting light; shedding or having much light; shining; luminous; not dark. The sun was bright o&#39;erhead. Longfellow. The earth was dark, but the heavens were bright. Drake. The public places were as bright as at noonday. Macaulay. 2. Transmitting light; clear; transparent. From the brightest wines He &#39;d turn abhorrent. Thomson. 3. Having qualities that render conspicuous or attractive, or that affect the mind as light does the eye; resplendent with charms; as, bright beauty. Bright as an angel new-dropped from the sky. Parnell. 4. Having a clear, quick intellect; intelligent. 5. Sparkling with wit; lively; vivacious; shedding cheerfulness and joy around; cheerful; cheery. Be bright and jovial among your guests. Shak. 6. Illustrious; glorious. In the brightest annals of a female reign. Cotton. 7. Manifest to the mind, as light is to the eyes; clear; evident; plain. That he may with more ease, with brighter evidence, and with surer success, draw the bearner on. I. Watts. 8. Of brilliant color; of lively hue or appearance. Here the bright crocus and blue violet grew. Pope. Note: Bright is used in composition in the sense of brilliant, clear, sunny, etc.; as, bright-eyed, bright-haired, bright-hued. Syn. -- Shining; splending; luminous; lustrous; brilliant; resplendent; effulgent; refulgent; radiant; sparkling; glittering; lucid; beamy; clear; transparent; illustrious; witty; clear; vivacious; sunny. n nSplendor; brightness. [Poetic] Dark with excessive bright thy skirts appear. Milton. n nBrightly. Chaucer. I say it is the moon that shines so bright. Shak. n nTo be or become overripe, as wheat, barley, or hops. [Prov. Eng.]&#34;, &#34;word&#34;: &#34;bright&#34;, &#34;valid&#34;: true} .",
+            "url": "https://henerystone.github.io/ws2/techtalk/api",
+            "relUrl": "/techtalk/api",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post5": {
+            "title": "Bash Tutorial",
+            "content": "Prerequisites for Bash on Jupyter . Being able to find a Bash Reference. Here is a Bash Cheat Sheet&gt; Install the Bash Kernel for Jupyter notebooks. Expectations are pip3 and python3 are defined within the path. The bash shell allowed construction of this tutorial. . pip install bash_kernel | python -m bash_kernel.install | . Selecting a kernel in &quot;code --project--&quot; or &quot;jupyter notebook --file.ipynb--&quot; that have bash in options. . Prerequisites for Project Directory . Practice pulling code from git to your machine. This will create a project directory and add APCSP github project to the directory. There is conditional logic to make sure that directory and pull only happen if it does not (!) exist. . Hack:Change variables, make new directory, clone to that directory. | . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . Look inside Fastpages/Github page project . All computers contain files and directories. The clone brought more files from cloud to your machine. Using the bash shell you will see some commands that show and interact with files and directories. . &quot;ls&quot; lists computer files in Unix and Unix-like operating systems | &quot;cd&quot; offers way to navigate and change working directory | &quot;pwd&quot; print working directory | &quot;echo&quot; used to display line of text/string that are passed as an argument | . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project pwd echo &quot;&quot; echo &quot;list top level or root of files with project pulled from github&quot; ls echo &quot;&quot; echo &quot;list again with hidden files pulled from github&quot; ls -a # hidden files flag, many shell commands have flags echo &quot;&quot; echo &quot;list all files in long format&quot; ls -al # all files and long listing . echo &quot;Look for posts&quot; export posts=$project/_posts # _posts inside project cd $posts # this should exist per fastpages pwd # present working directory ls -l # list posts . echo &quot;Look for notebooks&quot; export notebooks=$project/_notebooks # _notebooks is inside project cd $notebooks # this should exist per fastpages pwd # present working directory ls -l # list notebooks . echo &quot;Look for images in notebooks, print working directory, list files&quot; cd $notebooks/images # this should exist per fastpages pwd ls -l . Look inside a Markdown File . &quot;cat&quot; reads data from the file and gives its content as output . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project echo &quot;show the contents of README.md&quot; echo &quot;&quot; cat README.md # show contents of file, in this case markdown echo &quot;&quot; echo &quot;end of README.md&quot; . Env, Git and GitHub . Env(ironment) is used to capture things like path to Code or Home directory. Git and GitHub is NOT Only used to exchange code between individuals, it is often used to exchange code through servers, in our case deployment for Website. All tools we use have a behind the scenes hav relationship with the system they run on (MacOS, Windows, Linus) or a relationship with servers which they are connected to (ie GitHub). There is an &quot;env&quot; command in bash. There are environment files and setting files (.git/config) for Git. They both use a key/value concept. . &quot;env&quot; show setting for your shell | &quot;git clone&quot; sets up a director of files | &quot;cd $project&quot; allows user to move inside that directory of files | &quot;.git&quot; is a hidden directory that is used by git to establish relationship between machine and the git server on GitHub. | . echo &quot;Show the shell environment variables, key on left of equal value on right&quot; echo &quot;&quot; env . cd $project echo &quot;&quot; echo &quot;show the secrets of .git&quot; cd .git ls -l echo &quot;&quot; echo &quot;look at config file&quot; cat config . Student Request - Make a file in Bash . This example was requested by a student (Jun Lim, CSA). The request was to make jupyer file using bash, I adapted the request to markdown. This type of thought will have great extrapolation to coding and possibilities of using List, Arrays, or APIs to build user interfaces. JavaScript is a language where building HTML is very common. . To get more interesting output from terminal, this will require using something like mdless (https://github.com/ttscoff/mdless). This enables see markdown in rendered format.- On Desktop Install PKG from MacPorts . In Terminal on MacOS Install ncurses | gem install mdless | . | . Output of the example is much nicer in &quot;jupyter&quot; . cd /tmp file=&quot;sample.md&quot; if [ -f &quot;$file&quot; ]; then rm $file fi tee -a $file &gt;/dev/null &lt;&lt;EOF # Show Generated Markdown This introductory paragraph and this line and the title above are generated using tee with the standard input (&lt;&lt;) redirection operator. - This bulleted element is still part of the tee body. EOF echo &quot;- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator.&quot; &gt;&gt; $file echo &quot;- The list definition, as is, is using space to seperate lines. Thus the use of commas and hyphens in output.&quot; &gt;&gt; $file actions=(&quot;ls,list-directory&quot; &quot;cd,change-directory&quot; &quot;pwd,present-working-directory&quot; &quot;if-then-fi,test-condition&quot; &quot;env,bash-environment-variables&quot; &quot;cat,view-file-contents&quot; &quot;tee,write-to-output&quot; &quot;echo,display-content-of-string&quot; &quot;echo_text_&gt; $file,write-content-to-file&quot; &quot;echo_text_&gt;&gt; $file,append-content-to-file&quot;) for action in ${actions[@]}; do # for loop is very similar to other language, though [@], semi-colon, do are new action=${action//-/ } # convert dash to space action=${action//,/: } # convert comma to colon action=${action//_text_/ &quot;sample text &quot; } # convert _text_ to sample text, note escape character to avoid &quot;&quot; having meaning echo &quot; - ${action//-/ }&quot; &gt;&gt; $file # echo is redirected to file with &gt;&gt; done echo &quot;&quot; echo &quot;File listing and status&quot; ls -l $file # list file wc $file # show words mdless $file # this requires installation, but renders markown from terminal rm $file # clean up termporary file . Hacks . Go back to some of the deployment procedures and think about some thing you could verify through Bash notebook. . Is there anything we use to verify tools we install? Think about versions. | Is there anything we could verify with Anaconda? | How would you update a repository? | Really cool would be automating a procedure from installation. | .",
+            "url": "https://henerystone.github.io/ws2/techtalk/bash",
+            "relUrl": "/techtalk/bash",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post6": {
+            "title": "Vocab",
+            "content": "Algorithm: At its core, an algorithm is really just a generalized, conceptual solution to a problem that can later be implemented in some real-world form like a computer program. . Application Program Interface : Application program interface (API) is a set of routines, protocols, and tools for constructing software applications. An API specifies how software components should interact. In addition, APIs are used when programming graphical user interface (GUI) components. . Binary : A numeric system of base 2 that only uses combinations of the digits zero and one; this is used in one of the lowest levels of abstraction. Computers operate in binary, as they store data and perform calculations using only zeros and ones. While a single binary digit can be used to represent True (1) or False (0) in boolean logic, multiple binary digits can be used in conjunction to store large numbers and perform complex functions. Computers translate between binary and what you actually work with such as numbers and text. .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/Vocab.html",
+            "relUrl": "/2022/12/14/Vocab.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post7": {
+            "title": "App Chess quiz",
+            "content": "This is a Chess quiz made in Code.org with javascript block code. The chess quiz is a quiz about some of the more advanced principles of chess. It questions the user about all the advanced aspects of chess and some more. The quiz contains 3 questions with interesting pictures and backgrounds, offering a scam prize at the end. A fun and interactive quiz to waste time with. . Steps: . 1) Design - Several &quot;on event&quot; functions that add simplicity in the program. 2) Brainstorm - Brainstorm and come up with the idea of the quiz questions. 3) Implementation - Integrate the quiz questions with the code. 4) Finishing - Clean up the code and finish the program. . Problems: . Technical and understanding issues were frequent:experimentation and brainstorming cleared doubts and problems with code and understanding. . Link to app: . https://studio.code.org/projects/applab/sDfuUPMCN4YWUzTMEib8_75gHe-4DmruDFdt0wbY-7k/edit .",
+            "url": "https://henerystone.github.io/ws2/chesscode/app",
+            "relUrl": "/chesscode/app",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post8": {
+            "title": "Quiz",
+            "content": "I took the quiz on Monday and felt quite confident about it. On Tuesday, I checked the score and discovered that I had gotten a 44/50 score. This score was brought about by the failure of my mental abilities in six questions. The first one was a question about a video game in which I did not read the question well enough and did not see that I was meant to select two options. The second question was related to lists and data abstraction. I messed up this problem as I did not fully understand the question and was forced to select a random answer and hope for the best. The third question was involving electric units and math in general. I again did not fully understand and botched the math in this, ruining the answer. The fourth question was about the internet and transmission and I was in the wrong as I made a silly mistake in understanding how the internet worked and the fact that information could be received by a device in any order for using the internet. The fifth and sixth questions were destroyed by my simple mind due to silly mistakes. .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/Quiz.html",
+            "relUrl": "/2022/12/14/Quiz.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post9": {
+            "title": "Night At The Museum",
+            "content": "At the Night at the Museum, we explored the exciting world of computer science and art in a fun presentation form. One of the best projects I saw was a computer science project that used APIs to run an Alarm Clock with a stopwatch and time relevant to many different time zones. The most exciting thing about this project was that its APIs were actually created by the group itself. This project was a combination of creativity and collaboration. Another project that caught my eye was an art project. . In the center of this panel, there is a very detailed scene of a patient and some doctors. This scene is incredibly detailed, looking like a window into another room with this happening. .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/Night-at-the-Museum.html",
+            "relUrl": "/2022/12/14/Night-at-the-Museum.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post10": {
+            "title": "Javascript and Chess",
+            "content": "function type(output){ console.log(output); } function Chess(name, rank, yrsplay){ this.name = name; this.rank = rank; this.yrsplay = yrsplay; this.exp = &quot;&quot; } Chess.prototype.setExp = function(exp){ this.exp = exp; } Chess.prototype.toJSON = function(){ const obj = {name: this.name, rank: this.rank, yrsplay: this.yrsplay, exp: this.exp}; const json = JSON.stringify(obj); return json; } var chess_players = [ new Chess(&quot;Magnus Carlsen&quot;,2856, 26), new Chess(&quot;Ding Liren&quot;,2811,13), new Chess(&quot;Ian Nepomniachtchi&quot;,2793,28), ]; function Leaderboard(chess_play){ chess_play.setExp(&quot;Grandmaster&quot;); this.chess_play = chess_play; this.Leaderboard = [chess_play]; this.json = []; this.classroom.forEach(Chess =&gt; this.json.push(Chess.toJSON())); } leaders = new Leaderboard(chess_players) Chess.prototype._toHtml = function() { var style = ( &quot;display:inline-block;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); var body = &quot;&quot;; body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Rank&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Years Played&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Experience&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; for (var row of leaders.classroom) { body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.name + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.rank + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.yrsplay + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.exp + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;tr&gt;&quot;; } return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); }; $$.html(leaders._toHtml()); . evalmachine.&lt;anonymous&gt;:30 chess_play.setExp(&#34;Grandmaster&#34;); ^ TypeError: chess_play.setExp is not a function at new Leaderboard (evalmachine.&lt;anonymous&gt;:30:14) at evalmachine.&lt;anonymous&gt;:39:11 at ContextifyScript.Script.runInThisContext (vm.js:25:33) at Object.runInThisContext (vm.js:97:38) at run ([eval]:1020:15) at onRunRequest ([eval]:864:18) at onMessage ([eval]:828:13) at emitTwo (events.js:106:13) at process.emit (events.js:191:7) at process.nextTick (internal/child_process.js:758:12) .",
+            "url": "https://henerystone.github.io/ws2/chesscode/javascript",
+            "relUrl": "/chesscode/javascript",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post11": {
+            "title": "Dictionary but Chess",
+            "content": "InfoDb = [] Name = input(&quot;First Name: &quot;) Lastn = input(&quot;Last Name: &quot;) rank = input(&quot;What is your chess ranking? &quot;) # InfoDB is a data structure with expected Keys and Values # Append to List a Dictionary of key/values related to a person and cars InfoDb.append({ &quot;FirstName&quot;: Name, &quot;LastName&quot;: Lastn, &quot;Ranking&quot;: [rank] }) # Append to List a 2nd Dictionary of key/values InfoDb.append({ &quot;FirstName&quot;: &quot;Barry&quot;, &quot;LastName&quot;: &quot;Smith&quot;, &quot;Class&quot;: &quot;APCSP&quot;, &quot;Grade&quot;: &quot;Freshman&quot;, &quot;Favorite Food&quot;: [&quot;Pizza&quot;] }) # Print the data structure print(InfoDb) . [{&#39;FirstName&#39;: &#39;g&#39;, &#39;LastName&#39;: &#39;h&#39;, &#39;Ranking&#39;: [&#39;k&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;Class&#39;: &#39;APCSP&#39;, &#39;Grade&#39;: &#39;Freshman&#39;, &#39;Favorite Food&#39;: [&#39;Pizza&#39;]}] .",
+            "url": "https://henerystone.github.io/ws2/chesscode/info",
+            "relUrl": "/chesscode/info",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post12": {
+            "title": "Homework 1-2",
+            "content": "data = [104, 101, 4, 105, 308, 103, 5, 107, 100, 306, 106, 102, 108] min_valid = 100 max_valid = 200 for i in range(len(data)): if data[i]&lt;min_valid or data[i]&gt;max_valid: print(i, data[i]) . albums = [ (&quot;Welcome to my Nightmare&quot;, &quot;Alice Cooper&quot;, 1975, # First album list [ (1, &quot;Welcome to my Nightmare&quot;), (2, &quot;Devil&#39;s Food&quot;), (3, &quot;The Black Widow&quot;), (4, &quot;Some Folks&quot;), (5, &quot;Only Women Bleed&quot;), ] ), (&quot;Bad Company&quot;, &quot;Bad Company&quot;, 1974, # Second album list [ (1, &quot;Can&#39;t Get Enough&quot;), (2, &quot;Rock Steady&quot;), (3, &quot;Ready for Love&quot;), (4, &quot;Don&#39;t Let Me Down&quot;), (5, &quot;Bad Company&quot;), (6, &quot;The Way I Choose&quot;), (7, &quot;Movin&#39; On&quot;), (8, &quot;Seagull&quot;), ] ), (&quot;Nightflight&quot;, &quot;Budgie&quot;, 1981, [ (1, &quot;I Turned to Stone&quot;), (2, &quot;Keeping a Rendezvous&quot;), (3, &quot;Reaper of the Glory&quot;), (4, &quot;She Used Me Up&quot;), ] ), (&quot;More Mayhem&quot;, &quot;Imelda May&quot;, 2011, [ (1, &quot;Pulling the Rug&quot;), (2, &quot;Psycho&quot;), (3, &quot;Mayhem&quot;), (4, &quot;Kentish Town Waltz&quot;), ] ), ] album_userchoice = input() song_userchoice = input() print(f&quot;Now Playing: &quot;{albums[int(album_userchoice)-1][3][int(song_userchoice)-1][1]} &quot;&quot;) . Now Playing: &#34;Devil&#39;s Food&#34; .",
+            "url": "https://henerystone.github.io/ws2/techtalk/hw",
+            "relUrl": "/techtalk/hw",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post13": {
+            "title": "Extra Credit Notes",
+            "content": "Kathyleen Beveridge: . Born in Vietnam, studied in Spain, moved to San Diego . Finance degree, MBA at USC . Finance major investment banker in Wells Fargo 1995-1996 . After leaving finance industry joined technological industry . Joined Hp inc then Qualcomm and finally now works at Thermo Fisher scientific . All these companies want to make tech the world will benefit from. . Thermo fisher scientific is the world leader in serving science. . Kathyleen started her career life as a finance manager but she left that job to become more involved in engineering and computer science. Computer science helped Kathyleen discover her true calling in life and help develop something meaningful for the world. . ____________________________________________________________________________ . Kris Porter: software engineer . Studied in Livermore high school . Enroled at UCLA for electrical engineering degree . Learnt about communication sytems and electrical engineering . Networked infrastructural systems software . Finished graduate school -&gt; became systems engineer at GPM -&gt; joined NBC universal to work with communications software-&gt; Intro to devops and transitioned to Qualcomm -&gt; joined Twitter . Extra learning: . CCNA training . Machine learning . Python . Data structure algorithms and system design . Twitter university . Projects he worked on: . Starting media infrastructure for the 2012 olympic games . analytics infrastructure projects . Twitter project .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/Extra-Credit-notes.html",
+            "relUrl": "/2022/12/14/Extra-Credit-notes.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post14": {
+            "title": "Chess Guide",
+            "content": "This is a guide on how to play chess. . Chess is an incredibly strategic game that is played by millions of people world wide. Chess can get incredibly advanced but one must start with the basics. .",
+            "url": "https://henerystone.github.io/ws2/chess/instruct",
+            "relUrl": "/chess/instruct",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post15": {
+            "title": "Chess is cool",
+            "content": "toc: true | comments: true | permalink: /chesscode/cool | categories: [chesscode] | . Chess is cool . This is a Chess quiz: 3 questions shall be asked. Try to get them all correct. . import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg rsp = question_with_response(&quot;What is a king?&quot;) if rsp == &quot;main piece in chess&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the queen placed?&quot;) if rsp == &quot;next to the king&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the rook placed?&quot;) if rsp == &quot;at the ends of the board&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, shreyas running /home/shreyas/anaconda3/bin/python You will be asked 3 questions. Question: Are you ready to take a test? Answer: yes Question: What is a king? That is incorrect! Question: Where is the queen placed? That is incorrect! Question: Where is the rook placed? That is incorrect! shreyas you scored 0/3 .",
+            "url": "https://henerystone.github.io/ws2/2022/12/14/Bash_note.html",
+            "relUrl": "/2022/12/14/Bash_note.html",
+            "date": " • Dec 14, 2022"
+        }
+        
+    
+  
+    
+        ,"post16": {
             "title": "Lessons 3.17 - 3.18",
             "content": "3.17 Algorithmic Efficiency . Vocabulary . Problem: a general description of a task that can or cannot be solved algorithmically Decision Problem: A problem with a yes or no answer | Organization Problem: a problem with a goal of finding the best answer | . | Instance: a problem with a specific input | Efficiency: amount of computing needed to solve a problem Polynomial Efficiency (Good): more work takes a proportional amount of time (1 job is +2 time) | Exponential Efficiency (Bad): more work takes an exponential amount more time (1 job is 2x time) | . | Heuristic Approach: When optimal solutions are inefficient, look for a possibly optimal solution that is more efficient | Decidable Problem: A decision problem that has a clear solution that will always make a correct output | Undecidable Problem: A decision problem with no solution that is not gaurenteed to produce the correct output | . Efficiency . below are three example of code that all complete the same task. See that they all take different amounts of time to run. These show varying levels of Polynomial Efficiency . import time def toint(x): x = int(x) return(x) def tostr(x): x = str(x) return(x) def add(x,y): x = toint(x) y = toint(y) z = x + y z = tostr(z) return(z) starttime = time.time() for i in range(1000000): x = &quot;1&quot; y = &quot;2&quot; answer = add(x,y) print(answer) endtime = time.time() print(endtime-starttime,&#39;seconds&#39;) . 3 3.7525901794433594 seconds . import time def betteradd(x,y): z = x + y return(z) starttime = time.time() for i in range(1000000): x = 1 y = 2 z = betteradd(x,y) print(z) endtime = time.time() print(endtime-starttime,&#39;seconds&#39;) . 3 1.031329870223999 seconds . import time starttime = time.time() for i in range(1000000): x = 1 y = 2 z = x+y print(z) endtime = time.time() print(endtime-starttime,&#39;seconds&#39;) . 3 0.4064326286315918 seconds . Now am example of both Polynomial, and Exponential Efficiencies: . let&#39;s say X is the number of values in a data set. Let&#39;s also say that the equations shown are the amount of cycles needed to sort a data set of that length. More cycles = longer time to run . x 3x (2x)^2 3^x . 1 | 3 | 4 | 3 | . 2 | 6 | 16 | 9 | . 3 | 9 | 36 | 27 | . 4 | 12 | 64 | 81 | . 5 | 15 | 100 | 243 | . 6 | 18 | 144 | 729 | . 7 | 21 | 196 | 2187 | . X | Polynomial | Polynomial | Exponential | . X | Efficient | Efficient | Inefficient | . Heuristic Approach: . Let&#39;s say we have these requirements: . 30 students per class | 300 students | 10 classrooms / classes | 5 classes per student / periods per day | each student has a different list of 5 wanted classes with 1st, 2nd, and 3rd choices | . Thats a lot! . Just imagine how complex it would be to use all of those requirements and make every student as happy as possible. This is when we would use a heuristic approach. This is when we sacrifice optimal solutions to imporve eficcency and ease of programming. . Challenge . Try and fix this ineficcient code! Only change the code between the two commented lines. Fully programmed solution will improve your grade, at a minimum show that you tried. . import time numlist = [1,3,5,7,9,11,13,15,17,19] valuelist = [0,3,6,9,12,15,18,21] def isvalue(value,array): #-- exists = False while exists == False: for i in range(len(array)): if value == array[i]: exists = True if exists == False: return exists return exists #-- starttime = time.time() for i in range(100000): for i in range(len(valuelist)): x = isvalue(valuelist[i],numlist) endtime = time.time() print(endtime-starttime,&#39;seconds&#39;) . 6.984534740447998 seconds . 3.18 Undecidable Problems . Examples . def divby3(x): if x % 3 == 0: return True else: return False print(divby3(21)) . True . Undecidable Problem: The halting problem . Let&#39;s say you have a program that calculates weather another program would error-out given a certain input, then reverse its output. If you fed this program into itself, something weird would happen. Say the first step said the program would have an error, the second step would say no error. This proves the first step was wrong, creating a paradox. . Situations like this happen every day, when a computer must guess when to stop loading a website that might never load. This is why internet interctions will time out if it takes too long. . Video: . Homework! . Make an algorithm that finds the fastest route that hits every location once starting and ending at Del Norte. Make sure to show your thinking. If you are strugling, try using a huristic approach. Remember, what matters more than having perfectly functioning code is that you tried your hardest. . dataset = { &#39;DelNorte&#39;:{ &#39;Westview&#39;:15, &#39;MtCarmel&#39;:20, &#39;Poway&#39;:35, &#39;RanchoBernrdo&#39;:50 }, &#39;Westview&#39;:{ &#39;Del Norte&#39;:15, &#39;MtCarmel&#39;:35, &#39;Poway&#39;:25, &#39;RanchoBernrdo&#39;: 45 }, &#39;MtCarmel&#39;:{ &#39;Westview&#39;:35, &#39;Del Norte&#39;:20, &#39;Poway&#39;:40, &#39;RanchoBernrdo&#39;:30 }, &#39;Poway&#39;:{ &#39;Westview&#39;:25, &#39;MtCarmel&#39;:40, &#39;Del Norte&#39;:35, &#39;RanchoBernrdo&#39;:15 }, &#39;RanchoBernardo&#39;:{ &#39;Westview&#39;:45, &#39;MtCarmel&#39;:30, &#39;Poway&#39;:15, &#39;Del Norte&#39;:50 } } . def fastestroute(start,data): drivetime = 0 order = [] #CODE,CODE,CODE return(drivetime,order) start = &#39;DelNorte&#39; # &#39;dataset&#39; is the name of the nested key value pair . Grading: . Challenge Homework . .15 pts for attempt | .65 for attempt | . .20 pts for complete | .70 for complete | . .25 pts for above and beyond | .75 pts for above and beyond | .",
             "url": "https://henerystone.github.io/ws2/lesson",
@@ -12,7 +188,7 @@
     
   
     
-        ,"post1": {
+        ,"post17": {
             "title": "Homework 3.17 - 3.18",
             "content": "3.17 Algorithmic Efficiency . Vocabulary . Problem: Decision Problem: | Organization Problem: | . | Instance: | Efficiency: Polynomial Efficiency (Good): | Exponential Efficiency (Bad): | . | Heuristic Approach: | Decidable Problem: | Undecidable Problem: | . Notes . _ | . Challenge . Try and fix this ineficcient code! Only change the code between the two commented lines. Fully programmed solution will improve your grade, at a minimum show that you tried. . import time numlist = [1,3,5,7,9,11,13,15,17,19] valuelist = [0,3,6,9,12,15,18,21] def isvalue(value,array): #-- exists = False while exists == False: for i in range(len(array)): if value == array[i]: exists = True if exists == False: return exists return exists #-- starttime = time.time() for i in range(100000): for i in range(len(valuelist)): x = isvalue(valuelist[i],numlist) endtime = time.time() print(endtime-starttime,&#39;seconds&#39;) . 6.984534740447998 seconds . 3.18 Undecidable Problems . Notes . _ | . Homework! . Make an algorithm that finds the fastest route that hits every location once starting and ending at Del Norte. Make sure to show your thinking. If you are strugling, try using a huristic approach. Remember, what matters more than having perfectly functioning code is that you tried your hardest. . dataset = { &#39;DelNorte&#39;:{ &#39;Westview&#39;:15, &#39;MtCarmel&#39;:20, &#39;Poway&#39;:35, &#39;RanchoBernrdo&#39;:50 }, &#39;Westview&#39;:{ &#39;Del Norte&#39;:15, &#39;MtCarmel&#39;:35, &#39;Poway&#39;:25, &#39;RanchoBernrdo&#39;: 45 }, &#39;MtCarmel&#39;:{ &#39;Westview&#39;:35, &#39;Del Norte&#39;:20, &#39;Poway&#39;:40, &#39;RanchoBernrdo&#39;:30 }, &#39;Poway&#39;:{ &#39;Westview&#39;:25, &#39;MtCarmel&#39;:40, &#39;Del Norte&#39;:35, &#39;RanchoBernrdo&#39;:15 }, &#39;RanchoBernardo&#39;:{ &#39;Westview&#39;:45, &#39;MtCarmel&#39;:30, &#39;Poway&#39;:15, &#39;Del Norte&#39;:50 } } . def fastestroute(start,data): drivetime = 0 order = [] #CODE,CODE,CODE return(drivetime,order) start = &#39;DelNorte&#39; # &#39;dataset&#39; is the name of the nested key value pair . Grading: . Challenge Homework . .15 pts for attempt | .65 for attempt | . .20 pts for complete | .70 for complete | . .25 pts for above and beyond | .75 pts for above and beyond | .",
             "url": "https://henerystone.github.io/ws2/homework1718",
@@ -23,188 +199,12 @@
     
   
     
-        ,"post2": {
-            "title": "Chess Quiz two",
-            "content": "Quiz = ({ &quot;How many spaces can a pawn move on its first turn?&quot;: &quot;2&quot;, &quot;How many spaces can a pawn move on its second turn?&quot;: &quot;1&quot;, &quot;How many pawns exist on one side inn a chess game?&quot;: &quot;8&quot; }) correct = 0 for key, value in Quiz.items(): questions = input(key) if questions == value: print(&quot;Correct&quot;) correct+=1 else: print(&quot;Incorrect&quot;) print(&quot;Score: &quot;,correct) .",
-            "url": "https://henerystone.github.io/ws2/chesscode/chessquiz",
-            "relUrl": "/chesscode/chessquiz",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post3": {
-            "title": "Psycology and the good life",
-            "content": "The video talks about stress in a college environment and how to relive the stress that occurs. Stress is most common in college students due to the fact that they are ovewhelmed and anxious. To relive stress, one must take a break from their daily life and take some time to do what one loves. I personally like to take time to read a book or play video games. This helps me relax and destress myself .",
-            "url": "https://henerystone.github.io/ws2/psycology/other",
-            "relUrl": "/psycology/other",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post4": {
-            "title": "Note Template",
-            "content": "Take some additional notes that you would like here for 3.12 and 3.13. We will be looking for additional notes from the presentation. . What are procedures? . Fill in the blanks please: . Procedure: a named group of programming instructions that may have parameters and return values. . Parameters: input values of a procedure. . Arguments: specify the values of the parameters when a procedure is called . Modularity: . Procedural Abstraction: . What are some other names for procedures?: . Why are procedures effective?: . Challenge 1 below: Add the command that will call the procedure. . def DecimalToBinary(num): strs = &quot;&quot; while num: # if (num &amp; 1) = 1 if (num &amp; 1): strs += &quot;1&quot; # if (num &amp; 1) = 0 else: strs += &quot;0&quot; # right shift by 1 num &gt;&gt;= 1 return strs # function to reverse the string def reverse(strs): print(strs[::-1]) # Driver Code num = 67 print(&quot;Binary of num 67 is:&quot;, end=&quot; &quot;) reverse(DecimalToBinary(num)) . Binary of num 67 is: 1000011 . Challenge 2 below: Complete the Min and Max procedure in either JavaScript and Python using the instructions from the JavaScript page. (JavaScript will get you a extra 0.1) . function min(numa, numb) { if(numa&gt;numb){ console.log(numa+&quot; is the larger number&quot;) } else{ console.log(numb+&quot; is the larger number&quot;) } } a = 5 b = 2 min(a,b); . 5 is the larger number . Homework/Hacks: For the hw, you have two options, easy or hard. The easy hack is for a 2.7 + extra work for the full 3. The easy hack is simply creating your own procedure with your own creativity. Since there is a lot of leeway for this one, you must do additional work to get a 3. For the hard hack, below is the start to a character to binary convertor. This is just a template, but the goal is to translate &quot;APCSP&quot; into binary. You can delete the existing code if you want. The only contraint is that you must use a procedure. Doing this will get you a 3. . def charToBinary(x):() .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/notetemplate.html",
-            "relUrl": "/2022/12/13/notetemplate.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post5": {
-            "title": "Notes/Vocab",
-            "content": "",
-            "url": "https://henerystone.github.io/ws2/techtalk/api",
-            "relUrl": "/techtalk/api",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post6": {
-            "title": "API",
-            "content": "import requests url = &quot;https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary&quot; x = input(&quot;&quot;) querystring = {&quot;word&quot;:x} headers = { &quot;X-RapidAPI-Key&quot;: &quot;dee5dcce83msh780914d639facb7p1f43c5jsn4c4a7717bb03&quot;, &quot;X-RapidAPI-Host&quot;: &quot;dictionary-by-api-ninjas.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers, params=querystring) print(response.text) . {&#34;definition&#34;: &#34;See Brite, v. i. n n1. Radiating or reflecting light; shedding or having much light; shining; luminous; not dark. The sun was bright o&#39;erhead. Longfellow. The earth was dark, but the heavens were bright. Drake. The public places were as bright as at noonday. Macaulay. 2. Transmitting light; clear; transparent. From the brightest wines He &#39;d turn abhorrent. Thomson. 3. Having qualities that render conspicuous or attractive, or that affect the mind as light does the eye; resplendent with charms; as, bright beauty. Bright as an angel new-dropped from the sky. Parnell. 4. Having a clear, quick intellect; intelligent. 5. Sparkling with wit; lively; vivacious; shedding cheerfulness and joy around; cheerful; cheery. Be bright and jovial among your guests. Shak. 6. Illustrious; glorious. In the brightest annals of a female reign. Cotton. 7. Manifest to the mind, as light is to the eyes; clear; evident; plain. That he may with more ease, with brighter evidence, and with surer success, draw the bearner on. I. Watts. 8. Of brilliant color; of lively hue or appearance. Here the bright crocus and blue violet grew. Pope. Note: Bright is used in composition in the sense of brilliant, clear, sunny, etc.; as, bright-eyed, bright-haired, bright-hued. Syn. -- Shining; splending; luminous; lustrous; brilliant; resplendent; effulgent; refulgent; radiant; sparkling; glittering; lucid; beamy; clear; transparent; illustrious; witty; clear; vivacious; sunny. n nSplendor; brightness. [Poetic] Dark with excessive bright thy skirts appear. Milton. n nBrightly. Chaucer. I say it is the moon that shines so bright. Shak. n nTo be or become overripe, as wheat, barley, or hops. [Prov. Eng.]&#34;, &#34;word&#34;: &#34;bright&#34;, &#34;valid&#34;: true} .",
-            "url": "https://henerystone.github.io/ws2/techtalk/api",
-            "relUrl": "/techtalk/api",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post7": {
-            "title": "Bash Tutorial",
-            "content": "Prerequisites for Bash on Jupyter . Being able to find a Bash Reference. Here is a Bash Cheat Sheet&gt; Install the Bash Kernel for Jupyter notebooks. Expectations are pip3 and python3 are defined within the path. The bash shell allowed construction of this tutorial. . pip install bash_kernel | python -m bash_kernel.install | . Selecting a kernel in &quot;code --project--&quot; or &quot;jupyter notebook --file.ipynb--&quot; that have bash in options. . Prerequisites for Project Directory . Practice pulling code from git to your machine. This will create a project directory and add APCSP github project to the directory. There is conditional logic to make sure that directory and pull only happen if it does not (!) exist. . Hack:Change variables, make new directory, clone to that directory. | . echo &quot;Using conditional statement to create a project directory and project&quot; # Variable section export project_dir=$HOME/vscode # change vscode to different name to test git clone export project=$project_dir/APCSP # change APCSP to name of project from git clone export project_repo=&quot;https://github.com/nighthawkcoders/APCSP.git&quot; # change to project of choice cd ~ # start in home directory # Conditional block to make a project directory if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; # Conditional block to git clone a project from project_repo if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . Look inside Fastpages/Github page project . All computers contain files and directories. The clone brought more files from cloud to your machine. Using the bash shell you will see some commands that show and interact with files and directories. . &quot;ls&quot; lists computer files in Unix and Unix-like operating systems | &quot;cd&quot; offers way to navigate and change working directory | &quot;pwd&quot; print working directory | &quot;echo&quot; used to display line of text/string that are passed as an argument | . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project pwd echo &quot;&quot; echo &quot;list top level or root of files with project pulled from github&quot; ls echo &quot;&quot; echo &quot;list again with hidden files pulled from github&quot; ls -a # hidden files flag, many shell commands have flags echo &quot;&quot; echo &quot;list all files in long format&quot; ls -al # all files and long listing . echo &quot;Look for posts&quot; export posts=$project/_posts # _posts inside project cd $posts # this should exist per fastpages pwd # present working directory ls -l # list posts . echo &quot;Look for notebooks&quot; export notebooks=$project/_notebooks # _notebooks is inside project cd $notebooks # this should exist per fastpages pwd # present working directory ls -l # list notebooks . echo &quot;Look for images in notebooks, print working directory, list files&quot; cd $notebooks/images # this should exist per fastpages pwd ls -l . Look inside a Markdown File . &quot;cat&quot; reads data from the file and gives its content as output . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project echo &quot;show the contents of README.md&quot; echo &quot;&quot; cat README.md # show contents of file, in this case markdown echo &quot;&quot; echo &quot;end of README.md&quot; . Env, Git and GitHub . Env(ironment) is used to capture things like path to Code or Home directory. Git and GitHub is NOT Only used to exchange code between individuals, it is often used to exchange code through servers, in our case deployment for Website. All tools we use have a behind the scenes hav relationship with the system they run on (MacOS, Windows, Linus) or a relationship with servers which they are connected to (ie GitHub). There is an &quot;env&quot; command in bash. There are environment files and setting files (.git/config) for Git. They both use a key/value concept. . &quot;env&quot; show setting for your shell | &quot;git clone&quot; sets up a director of files | &quot;cd $project&quot; allows user to move inside that directory of files | &quot;.git&quot; is a hidden directory that is used by git to establish relationship between machine and the git server on GitHub. | . echo &quot;Show the shell environment variables, key on left of equal value on right&quot; echo &quot;&quot; env . cd $project echo &quot;&quot; echo &quot;show the secrets of .git&quot; cd .git ls -l echo &quot;&quot; echo &quot;look at config file&quot; cat config . Student Request - Make a file in Bash . This example was requested by a student (Jun Lim, CSA). The request was to make jupyer file using bash, I adapted the request to markdown. This type of thought will have great extrapolation to coding and possibilities of using List, Arrays, or APIs to build user interfaces. JavaScript is a language where building HTML is very common. . To get more interesting output from terminal, this will require using something like mdless (https://github.com/ttscoff/mdless). This enables see markdown in rendered format.- On Desktop Install PKG from MacPorts . In Terminal on MacOS Install ncurses | gem install mdless | . | . Output of the example is much nicer in &quot;jupyter&quot; . cd /tmp file=&quot;sample.md&quot; if [ -f &quot;$file&quot; ]; then rm $file fi tee -a $file &gt;/dev/null &lt;&lt;EOF # Show Generated Markdown This introductory paragraph and this line and the title above are generated using tee with the standard input (&lt;&lt;) redirection operator. - This bulleted element is still part of the tee body. EOF echo &quot;- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator.&quot; &gt;&gt; $file echo &quot;- The list definition, as is, is using space to seperate lines. Thus the use of commas and hyphens in output.&quot; &gt;&gt; $file actions=(&quot;ls,list-directory&quot; &quot;cd,change-directory&quot; &quot;pwd,present-working-directory&quot; &quot;if-then-fi,test-condition&quot; &quot;env,bash-environment-variables&quot; &quot;cat,view-file-contents&quot; &quot;tee,write-to-output&quot; &quot;echo,display-content-of-string&quot; &quot;echo_text_&gt; $file,write-content-to-file&quot; &quot;echo_text_&gt;&gt; $file,append-content-to-file&quot;) for action in ${actions[@]}; do # for loop is very similar to other language, though [@], semi-colon, do are new action=${action//-/ } # convert dash to space action=${action//,/: } # convert comma to colon action=${action//_text_/ &quot;sample text &quot; } # convert _text_ to sample text, note escape character to avoid &quot;&quot; having meaning echo &quot; - ${action//-/ }&quot; &gt;&gt; $file # echo is redirected to file with &gt;&gt; done echo &quot;&quot; echo &quot;File listing and status&quot; ls -l $file # list file wc $file # show words mdless $file # this requires installation, but renders markown from terminal rm $file # clean up termporary file . Hacks . Go back to some of the deployment procedures and think about some thing you could verify through Bash notebook. . Is there anything we use to verify tools we install? Think about versions. | Is there anything we could verify with Anaconda? | How would you update a repository? | Really cool would be automating a procedure from installation. | .",
-            "url": "https://henerystone.github.io/ws2/techtalk/bash",
-            "relUrl": "/techtalk/bash",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post8": {
-            "title": "Vocab",
-            "content": "Algorithm: At its core, an algorithm is really just a generalized, conceptual solution to a problem that can later be implemented in some real-world form like a computer program. . Application Program Interface : Application program interface (API) is a set of routines, protocols, and tools for constructing software applications. An API specifies how software components should interact. In addition, APIs are used when programming graphical user interface (GUI) components. . Binary : A numeric system of base 2 that only uses combinations of the digits zero and one; this is used in one of the lowest levels of abstraction. Computers operate in binary, as they store data and perform calculations using only zeros and ones. While a single binary digit can be used to represent True (1) or False (0) in boolean logic, multiple binary digits can be used in conjunction to store large numbers and perform complex functions. Computers translate between binary and what you actually work with such as numbers and text. .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/Vocab.html",
-            "relUrl": "/2022/12/13/Vocab.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post9": {
-            "title": "App Chess quiz",
-            "content": "This is a Chess quiz made in Code.org with javascript block code. The chess quiz is a quiz about some of the more advanced principles of chess. It questions the user about all the advanced aspects of chess and some more. The quiz contains 3 questions with interesting pictures and backgrounds, offering a scam prize at the end. A fun and interactive quiz to waste time with. . Steps: . 1) Design - Several &quot;on event&quot; functions that add simplicity in the program. 2) Brainstorm - Brainstorm and come up with the idea of the quiz questions. 3) Implementation - Integrate the quiz questions with the code. 4) Finishing - Clean up the code and finish the program. . Problems: . Technical and understanding issues were frequent:experimentation and brainstorming cleared doubts and problems with code and understanding. . Link to app: . https://studio.code.org/projects/applab/sDfuUPMCN4YWUzTMEib8_75gHe-4DmruDFdt0wbY-7k/edit .",
-            "url": "https://henerystone.github.io/ws2/chesscode/app",
-            "relUrl": "/chesscode/app",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post10": {
-            "title": "Quiz",
-            "content": "I took the quiz on Monday and felt quite confident about it. On Tuesday, I checked the score and discovered that I had gotten a 44/50 score. This score was brought about by the failure of my mental abilities in six questions. The first one was a question about a video game in which I did not read the question well enough and did not see that I was meant to select two options. The second question was related to lists and data abstraction. I messed up this problem as I did not fully understand the question and was forced to select a random answer and hope for the best. The third question was involving electric units and math in general. I again did not fully understand and botched the math in this, ruining the answer. The fourth question was about the internet and transmission and I was in the wrong as I made a silly mistake in understanding how the internet worked and the fact that information could be received by a device in any order for using the internet. The fifth and sixth questions were destroyed by my simple mind due to silly mistakes. .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/Quiz.html",
-            "relUrl": "/2022/12/13/Quiz.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post11": {
-            "title": "Night At The Museum",
-            "content": "At the Night at the Museum, we explored the exciting world of computer science and art in a fun presentation form. One of the best projects I saw was a computer science project that used APIs to run an Alarm Clock with a stopwatch and time relevant to many different time zones. The most exciting thing about this project was that its APIs were actually created by the group itself. This project was a combination of creativity and collaboration. Another project that caught my eye was an art project. . In the center of this panel, there is a very detailed scene of a patient and some doctors. This scene is incredibly detailed, looking like a window into another room with this happening. .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/Night-at-the-Museum.html",
-            "relUrl": "/2022/12/13/Night-at-the-Museum.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post12": {
-            "title": "Javascript and Chess",
-            "content": "function type(output){ console.log(output); } function Chess(name, rank, yrsplay){ this.name = name; this.rank = rank; this.yrsplay = yrsplay; this.exp = &quot;&quot; } Chess.prototype.setExp = function(exp){ this.exp = exp; } Chess.prototype.toJSON = function(){ const obj = {name: this.name, rank: this.rank, yrsplay: this.yrsplay, exp: this.exp}; const json = JSON.stringify(obj); return json; } var chess_players = [ new Chess(&quot;Magnus Carlsen&quot;,2856, 26), new Chess(&quot;Ding Liren&quot;,2811,13), new Chess(&quot;Ian Nepomniachtchi&quot;,2793,28), ]; function Leaderboard(chess_play){ chess_play.setExp(&quot;Grandmaster&quot;); this.chess_play = chess_play; this.Leaderboard = [chess_play]; this.json = []; this.classroom.forEach(Chess =&gt; this.json.push(Chess.toJSON())); } leaders = new Leaderboard(chess_players) Chess.prototype._toHtml = function() { var style = ( &quot;display:inline-block;&quot; + &quot;border: 2px solid grey;&quot; + &quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot; ); var body = &quot;&quot;; body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Name&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Rank&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Years Played&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;th&gt;&lt;mark&gt;&quot; + &quot;Experience&quot; + &quot;&lt;/mark&gt;&lt;/th&gt;&quot;; body += &quot;&lt;/tr&gt;&quot;; for (var row of leaders.classroom) { body += &quot;&lt;tr&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.name + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.rank + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.yrsplay + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;td&gt;&quot; + row.exp + &quot;&lt;/td&gt;&quot;; body += &quot;&lt;tr&gt;&quot;; } return ( &quot;&lt;div style=&#39;&quot; + style + &quot;&#39;&gt;&quot; + &quot;&lt;table&gt;&quot; + body + &quot;&lt;/table&gt;&quot; + &quot;&lt;/div&gt;&quot; ); }; $$.html(leaders._toHtml()); . evalmachine.&lt;anonymous&gt;:30 chess_play.setExp(&#34;Grandmaster&#34;); ^ TypeError: chess_play.setExp is not a function at new Leaderboard (evalmachine.&lt;anonymous&gt;:30:14) at evalmachine.&lt;anonymous&gt;:39:11 at ContextifyScript.Script.runInThisContext (vm.js:25:33) at Object.runInThisContext (vm.js:97:38) at run ([eval]:1020:15) at onRunRequest ([eval]:864:18) at onMessage ([eval]:828:13) at emitTwo (events.js:106:13) at process.emit (events.js:191:7) at process.nextTick (internal/child_process.js:758:12) .",
-            "url": "https://henerystone.github.io/ws2/chesscode/javascript",
-            "relUrl": "/chesscode/javascript",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post13": {
-            "title": "Dictionary but Chess",
-            "content": "InfoDb = [] Name = input(&quot;First Name: &quot;) Lastn = input(&quot;Last Name: &quot;) rank = input(&quot;What is your chess ranking? &quot;) # InfoDB is a data structure with expected Keys and Values # Append to List a Dictionary of key/values related to a person and cars InfoDb.append({ &quot;FirstName&quot;: Name, &quot;LastName&quot;: Lastn, &quot;Ranking&quot;: [rank] }) # Append to List a 2nd Dictionary of key/values InfoDb.append({ &quot;FirstName&quot;: &quot;Barry&quot;, &quot;LastName&quot;: &quot;Smith&quot;, &quot;Class&quot;: &quot;APCSP&quot;, &quot;Grade&quot;: &quot;Freshman&quot;, &quot;Favorite Food&quot;: [&quot;Pizza&quot;] }) # Print the data structure print(InfoDb) . [{&#39;FirstName&#39;: &#39;g&#39;, &#39;LastName&#39;: &#39;h&#39;, &#39;Ranking&#39;: [&#39;k&#39;]}, {&#39;FirstName&#39;: &#39;Sunny&#39;, &#39;LastName&#39;: &#39;Naidu&#39;, &#39;Class&#39;: &#39;APCSP&#39;, &#39;Grade&#39;: &#39;Freshman&#39;, &#39;Favorite Food&#39;: [&#39;Pizza&#39;]}] .",
-            "url": "https://henerystone.github.io/ws2/chesscode/info",
-            "relUrl": "/chesscode/info",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post14": {
-            "title": "Homework 1-2",
-            "content": "data = [104, 101, 4, 105, 308, 103, 5, 107, 100, 306, 106, 102, 108] min_valid = 100 max_valid = 200 for i in range(len(data)): if data[i]&lt;min_valid or data[i]&gt;max_valid: print(i, data[i]) . albums = [ (&quot;Welcome to my Nightmare&quot;, &quot;Alice Cooper&quot;, 1975, # First album list [ (1, &quot;Welcome to my Nightmare&quot;), (2, &quot;Devil&#39;s Food&quot;), (3, &quot;The Black Widow&quot;), (4, &quot;Some Folks&quot;), (5, &quot;Only Women Bleed&quot;), ] ), (&quot;Bad Company&quot;, &quot;Bad Company&quot;, 1974, # Second album list [ (1, &quot;Can&#39;t Get Enough&quot;), (2, &quot;Rock Steady&quot;), (3, &quot;Ready for Love&quot;), (4, &quot;Don&#39;t Let Me Down&quot;), (5, &quot;Bad Company&quot;), (6, &quot;The Way I Choose&quot;), (7, &quot;Movin&#39; On&quot;), (8, &quot;Seagull&quot;), ] ), (&quot;Nightflight&quot;, &quot;Budgie&quot;, 1981, [ (1, &quot;I Turned to Stone&quot;), (2, &quot;Keeping a Rendezvous&quot;), (3, &quot;Reaper of the Glory&quot;), (4, &quot;She Used Me Up&quot;), ] ), (&quot;More Mayhem&quot;, &quot;Imelda May&quot;, 2011, [ (1, &quot;Pulling the Rug&quot;), (2, &quot;Psycho&quot;), (3, &quot;Mayhem&quot;), (4, &quot;Kentish Town Waltz&quot;), ] ), ] album_userchoice = input() song_userchoice = input() print(f&quot;Now Playing: &quot;{albums[int(album_userchoice)-1][3][int(song_userchoice)-1][1]} &quot;&quot;) . Now Playing: &#34;Devil&#39;s Food&#34; .",
-            "url": "https://henerystone.github.io/ws2/techtalk/hw",
-            "relUrl": "/techtalk/hw",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post15": {
-            "title": "Extra Credit Notes",
-            "content": "Kathyleen Beveridge: . Born in Vietnam, studied in Spain, moved to San Diego . Finance degree, MBA at USC . Finance major investment banker in Wells Fargo 1995-1996 . After leaving finance industry joined technological industry . Joined Hp inc then Qualcomm and finally now works at Thermo Fisher scientific . All these companies want to make tech the world will benefit from. . Thermo fisher scientific is the world leader in serving science. . Kathyleen started her career life as a finance manager but she left that job to become more involved in engineering and computer science. Computer science helped Kathyleen discover her true calling in life and help develop something meaningful for the world. . ____________________________________________________________________________ . Kris Porter: software engineer . Studied in Livermore high school . Enroled at UCLA for electrical engineering degree . Learnt about communication sytems and electrical engineering . Networked infrastructural systems software . Finished graduate school -&gt; became systems engineer at GPM -&gt; joined NBC universal to work with communications software-&gt; Intro to devops and transitioned to Qualcomm -&gt; joined Twitter . Extra learning: . CCNA training . Machine learning . Python . Data structure algorithms and system design . Twitter university . Projects he worked on: . Starting media infrastructure for the 2012 olympic games . analytics infrastructure projects . Twitter project .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/Extra-Credit-notes.html",
-            "relUrl": "/2022/12/13/Extra-Credit-notes.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post16": {
-            "title": "Chess Guide",
-            "content": "This is a guide on how to play chess. . Chess is an incredibly strategic game that is played by millions of people world wide. Chess can get incredibly advanced but one must start with the basics. .",
-            "url": "https://henerystone.github.io/ws2/chess/instruct",
-            "relUrl": "/chess/instruct",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
-        ,"post17": {
-            "title": "Chess is cool",
-            "content": "toc: true | comments: true | permalink: /chesscode/cool | categories: [chesscode] | . Chess is cool . This is a Chess quiz: 3 questions shall be asked. Try to get them all correct. . import getpass, sys def question_and_answer(prompt): print(&quot;Question: &quot; + prompt) msg = input() print(&quot;Answer: &quot; + msg) questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg rsp = question_with_response(&quot;What is a king?&quot;) if rsp == &quot;main piece in chess&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the queen placed?&quot;) if rsp == &quot;next to the king&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) rsp = question_with_response(&quot;Where is the rook placed?&quot;) if rsp == &quot;at the ends of the board&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(&quot;That is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) . Hello, shreyas running /home/shreyas/anaconda3/bin/python You will be asked 3 questions. Question: Are you ready to take a test? Answer: yes Question: What is a king? That is incorrect! Question: Where is the queen placed? That is incorrect! Question: Where is the rook placed? That is incorrect! shreyas you scored 0/3 .",
-            "url": "https://henerystone.github.io/ws2/2022/12/13/Bash_note.html",
-            "relUrl": "/2022/12/13/Bash_note.html",
-            "date": " • Dec 13, 2022"
-        }
-        
-    
-  
-    
         ,"post18": {
             "title": "Sections 9-11 homework",
             "content": "Challenges and Homework . You have one homework problem. . Yes just one. . Don&#39;t get excited though. . Problem: Given a specific integer N, return the square root of N (R) if N is a perfect square, otherwise, return the square root of N rounded down to the nearest integer . Input: N (Integer) . Output: R (Integer) . Constraints: Do not use any built-in math operations such as sqrt(x) or x**(0.5), Try complete the problem in logarithmic time. . Hint 1: Maybe you can use Binary Search to try and reduce the number of checks you have to perform? . Hint 2: Is there a mathematical pattern amongst numbers and their square roots that could help you reduce the number of searches or iterations you must execute? Is there some value or rule you can set before applying binary search to narrow the range of possible values? . def sqrt(n): a = n b = n while b**2 != n: if b**2 &gt; n: a = b b = b//2 else: b = (b+a)//2 return b . from math import sqrt as sq test_cases = [0,1,4,85248289,22297284,18939904,91107025,69122596,9721924,37810201,1893294144,8722812816,644398225] answers = [int(sq(x)) for x in test_cases] def checkValid(): for i in range(len(test_cases)): if sqrt(test_cases[i]) == answers[i]: print(&quot;Check number {} passed&quot;.format(i+1)) else: print(&quot;Check number {} failed&quot;.format(i+1)) checkValid() . Check number 1 passed Check number 2 passed Check number 3 passed Check number 4 passed Check number 5 passed Check number 6 passed Check number 7 passed Check number 8 passed Check number 9 passed Check number 10 passed Check number 11 passed Check number 12 passed Check number 13 passed . Homework . Create an algorithm that will start with any positive integer n and display the full sequence of numbers that result from the Collatz Conjecture. The COllatz Conjecture is as follows: . start with any positive integer | if the number is even, divide by 2 | if the number is odd, multiply by 3 and add 1 | repeat steps 2 and 3 until you reach 1 | Example: if the starting number was 6, the output would be 6, 3, 10, 5, 16, 8, 4, 2, 1 . inte = int(input(&quot;Enter a number&quot;)) while inte != 1: print(inte) if inte%2 == 0: inte = inte/2 print(inte) else: inte = inte*3 inte = inte+1 print(inte) . 6 3.0 3.0 10.0 10.0 5.0 5.0 16.0 16.0 8.0 8.0 4.0 4.0 2.0 2.0 1.0 .",
             "url": "https://henerystone.github.io/ws2/techtalk/9-11",
             "relUrl": "/techtalk/9-11",
-            "date": " • Dec 13, 2022"
+            "date": " • Dec 14, 2022"
         }
         
     
