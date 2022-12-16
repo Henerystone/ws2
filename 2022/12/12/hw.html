@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -119,6 +119,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Hack-#1---Class-Notes">Hack #1 - Class Notes </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#2---Functions-Classwork">Hack #2 - Functions Classwork </a></li>
+<li class="toc-entry toc-h3"><a href="#Weighted-Coin-Flip">Weighted Coin Flip </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#3---Binary-Simulation-Problem">Hack #3 - Binary Simulation Problem </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-#4---Thinking-through-a-problem">Hack #4 - Thinking through a problem </a></li>
 <li class="toc-entry toc-h3"><a href="#Hack-5---Applying-your-knowledge-to-situation-based-problems">Hack 5 - Applying your knowledge to situation based problems </a></li>
@@ -138,8 +139,48 @@ window.onload = wrap_img;
 <h3 id="Hack-#1---Class-Notes">
 <a class="anchor" href="#Hack-#1---Class-Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #1 - Class Notes<a class="anchor-link" href="#Hack-#1---Class-Notes"> </a>
 </h3>
-<p>Write any extra notes you have here</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>Simulations are abstractions that mimic more complex objects or phenomena from the real world</p>
+</li>
+<li>
+<p>Purposes include drawing inferences without the contraints of the real world</p>
+</li>
+<li>
+<p>Simulations use varying sets of values to reflect the changing state of a real phenomenon</p>
+</li>
+<li>
+<p>Often, when developing a simulation, it is necessary to remove specific details or simplify aspects</p>
+</li>
+<li>
+<p>Simulations can often contain bias based on which details or real-world elements were included/excluded</p>
+</li>
+<li>
+<p>Simulations allow the formulation of hypotheses under consideration</p>
+</li>
+<li>
+<p>Variability and randomness of the world is considered using random number generators</p>
+</li>
+<li>
+<p>Examples: rolling dice, spinners, molecular models, analyze chemicals/reactions...</p>
+</li>
+</ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hack-#2---Functions-Classwork">
+<a class="anchor" href="#Hack-#2---Functions-Classwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #2 - Functions Classwork<a class="anchor-link" href="#Hack-#2---Functions-Classwork"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -150,10 +191,48 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">ran</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"random number: "</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">mycloset</span><span class="p">(</span><span class="n">add</span><span class="p">):</span>
+    <span class="n">myclothes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"red shoes"</span><span class="p">,</span> <span class="s2">"green pants"</span><span class="p">,</span> <span class="s2">"tie"</span><span class="p">,</span> <span class="s2">"belt"</span><span class="p">]</span>
+    <span class="n">myclothes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">add</span><span class="p">)</span>
+    <span class="n">select</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">myclothes</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">select</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">myclothes</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"select something to add"</span><span class="p">)</span>
+<span class="n">ab</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">mycloset</span><span class="p">(</span><span class="n">ab</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>random number:  29
+select something to add
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>['red shoes', 'tie', 'belt', '']</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -163,12 +242,57 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Hack-#2---Functions-Classwork">
-<a class="anchor" href="#Hack-#2---Functions-Classwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack #2 - Functions Classwork<a class="anchor-link" href="#Hack-#2---Functions-Classwork"> </a>
+<h3 id="Weighted-Coin-Flip">
+<a class="anchor" href="#Weighted-Coin-Flip" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weighted Coin Flip<a class="anchor-link" href="#Weighted-Coin-Flip"> </a>
 </h3>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">ran</span>
+
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">a</span> <span class="o">!=</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"heads"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"tails"</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>heads
+heads
+heads
+heads
+heads
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -219,6 +343,47 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">ran</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You are a prospector during the californian gold rush. Try to find gold or die"</span><span class="p">)</span>
+
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">ran</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">2</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">3</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">4</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">5</span> <span class="ow">or</span> <span class="n">x</span><span class="o">==</span><span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You found gold!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"You did not find gold and died"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>You are a prospector during the californian gold rush. Try to find gold or die
+You did not find gold and died
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -338,6 +503,50 @@ Be creative! Think about instances in your own life, science, puzzles that can b
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="k">as</span> <span class="nn">ran</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span> <span class="k">as</span> <span class="nn">tim</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"French revolution simulator"</span><span class="p">)</span>
+
+<span class="n">tim</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The streets of france are ridden with injustice..."</span><span class="p">)</span>
+<span class="n">tim</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"France is on the verge of revolution..."</span><span class="p">)</span>
+<span class="n">tim</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The price of bread contini"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>French revolution simulator
+The streets of france are ridden with injustice...
+France is on the verge of revolution...
+The streets of france are ridden with injustice...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
