@@ -143,7 +143,7 @@ window.onload = wrap_img;
 <span class="c1"># Setup of key Flask object (app)</span>
 <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <span class="c1"># Setup SQLAlchemy object and properties for the database (db)</span>
-<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;sqlite:///files/sqlite.db&#39;</span>  <span class="c1"># path and filename of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;sqlite:///sqlite.db&#39;</span>  <span class="c1"># path and filename of database</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;SQLALCHEMY_TRACK_MODIFICATIONS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;SQLALCHEMY_DATABASE_URI&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">database</span>
 <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;SECRET_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;SECRET_KEY&#39;</span>
@@ -392,6 +392,34 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26&#39;&gt;27&lt;/a&gt;</span>                 &#39;&#39;&#39;fails with bad or duplicate data&#39;&#39;&#39;
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=27&#39;&gt;28&lt;/a&gt;</span>                 print(f&#34;Records exist uid {user.uid}, or error.&#34;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span> initUsers()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">initUsers</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> db.create_all()
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> &#34;&#34;&#34;Tester data for table&#34;&#34;&#34;
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> u1 = User(name=&#39;Thomas Edison&#39;, uid=&#39;toby&#39;, password=&#39;123toby&#39;, dob=date(1847, 2, 11))
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> u2 = User(name=&#39;Nikola Tesla&#39;, uid=&#39;niko&#39;, password=&#39;123niko&#39;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> u3 = User(name=&#39;Alexander Graham Bell&#39;, uid=&#39;lex&#39;, password=&#39;123lex&#39;)
+
+<span class="ansi-red-fg">NameError</span>: name &#39;date&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -506,6 +534,56 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=23&#39;&gt;24&lt;/a&gt;</span> try:
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=24&#39;&gt;25&lt;/a&gt;</span>     user.dob = datetime.strptime(dob, &#39;%Y-%m-%d&#39;).date()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25&#39;&gt;26&lt;/a&gt;</span> except ValueError:
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/_strptime.py:568</span>, in <span class="ansi-cyan-fg">_strptime_datetime</span><span class="ansi-blue-fg">(cls, data_string, format)</span>
+<span class="ansi-green-intense-fg ansi-bold">    566</span> &#34;&#34;&#34;Return a class cls instance based on the input string and the
+<span class="ansi-green-intense-fg ansi-bold">    567</span> format string.&#34;&#34;&#34;
+<span class="ansi-green-fg">--&gt; 568</span> tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+<span class="ansi-green-intense-fg ansi-bold">    569</span> tzname, gmtoff = tt[-2:]
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/_strptime.py:349</span>, in <span class="ansi-cyan-fg">_strptime</span><span class="ansi-blue-fg">(data_string, format)</span>
+<span class="ansi-green-intense-fg ansi-bold">    348</span> if not found:
+<span class="ansi-green-fg">--&gt; 349</span>     raise ValueError(&#34;time data %r does not match format %r&#34; %
+<span class="ansi-green-intense-fg ansi-bold">    350</span>                      (data_string, format))
+<span class="ansi-green-intense-fg ansi-bold">    351</span> if len(data_string) != found.end():
+
+<span class="ansi-red-fg">ValueError</span>: time data &#39;&#39; does not match format &#39;%Y-%m-%d&#39;
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 38&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=34&#39;&gt;35&lt;/a&gt;</span>         except:  # error raised if object not created
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=35&#39;&gt;36&lt;/a&gt;</span>             print(&#34;Unknown error uid {uid}&#34;)
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=37&#39;&gt;38&lt;/a&gt;</span> create()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25&#39;&gt;26&lt;/a&gt;</span> except ValueError:
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26&#39;&gt;27&lt;/a&gt;</span>     user.dob = datetime.today()
+<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=27&#39;&gt;28&lt;/a&gt;</span>     print(f&#34;Invalid date {dob} require YYYY-mm-dd, date defaulted to {user.dbo}&#34;)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span> # write object to database
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=30&#39;&gt;31&lt;/a&gt;</span> with app.app_context():
+
+<span class="ansi-red-fg">AttributeError</span>: &#39;User&#39; object has no attribute &#39;dbo&#39;</pre>
+</div>
+</div>
+
 </div>
 </div>
 
