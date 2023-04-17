@@ -81,32 +81,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Database-Programming-is-Program-with-Data">Database Programming is Program with Data<a class="anchor-link" href="#Database-Programming-is-Program-with-Data"> </a></h1><blockquote><p>The Tri 2 Final Project is an example of a Program with Data.</p>
-<p>Prepare to use SQLite in common Imperative Technique</p>
-<ul>
-<li>Explore <a href="https://www.tutorialspoint.com/python_data_access/python_sqlite_establishing_connection.htm">SQLite Connect object</a> to establish database connection- Explore <a href="https://www.tutorialspoint.com/python_data_access/python_sqlite_cursor_object.htm">SQLite Cursor Object</a> to fetch data from a table within a database</li>
-</ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Schema-of-Users-table-in-Sqlite.db">Schema of Users table in Sqlite.db<a class="anchor-link" href="#Schema-of-Users-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses PRAGMA statement to read schema.</p>
-</blockquote>
-<p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
-<ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -116,7 +90,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;files/sqlite.db&#39;</span> <span class="c1"># this is location of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;instance/sqlite.db&#39;</span> <span class="c1"># this is location of database</span>
 
 <span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
     
@@ -136,7 +110,7 @@ window.onload = wrap_img;
     <span class="c1"># Close the database connection</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">schema</span><span class="p">()</span>
+<span class="c1">#schema()</span>
 </pre></div>
 
     </div>
@@ -148,14 +122,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reading-Users-table-in-Sqlite.db">Reading Users table in Sqlite.db<a class="anchor-link" href="#Reading-Users-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses SQL SELECT statement to read data</p>
-</blockquote>
-<ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
-</ul>
+<p>To identify each row
+numerical, string, float, boolean</p>
 
 </div>
 </div>
@@ -202,12 +170,10 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db<a class="anchor-link" href="#Create-a-new-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses SQL INSERT to add row</p>
-<ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
-</ul>
-</blockquote>
+<p>Connects to a data source
+it executes sql code
+They both have a lot of built in functions that you can execute with them.
+No, results is defined as a list in the debugger.</p>
 
 </div>
 </div>
@@ -261,13 +227,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Updating-a-User-in-table-in-Sqlite.db">Updating a User in table in Sqlite.db<a class="anchor-link" href="#Updating-a-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses SQL UPDATE to modify password</p>
-<ul>
-<li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
-</ul>
-</blockquote>
+<p>Both create functions seem the same to me. This function does not encrypt the password though.
+They're not the same, but very similar. user init included the create function while insert is the create function.</p>
 
 </div>
 </div>
@@ -325,12 +286,9 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Delete-a-User-in-table-in-Sqlite.db">Delete a User in table in Sqlite.db<a class="anchor-link" href="#Delete-a-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses a delete function to remove a user based on a user input of the id.</p>
-<ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>What is the "f" and {uid} do?</li>
-</ul>
-</blockquote>
+<p>The hacked part will change your password to hacked the new password you inputted is less than two characters.
+I think except would occur when try fails. If there's an error while trying, then except will occur
+The definition and use of conn and cursor. They are necessary to interact with the sql database.</p>
 
 </div>
 </div>
@@ -379,6 +337,13 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This delete function seems dangerous. It allows you to delete anyone without verifying if it's your account.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Menu-Interface-to-CRUD-operations">Menu Interface to CRUD operations<a class="anchor-link" href="#Menu-Interface-to-CRUD-operations"> </a></h1><blockquote><p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
@@ -431,11 +396,8 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>Create a new Table or do something new, <a href="https://www.sqlitetutorial.net/sqlite-python/creating-tables/">sqlite documentation</a></li>
-<li>In implementation in previous bullet, do you see procedural abstraction?</li>
-</ul>
+<p>So you can easily execute multiple actions without pressing the run button.
+Maybe you could put every function in a list, and execute functions by putting the user input in the list index</p>
 
 </div>
 </div>

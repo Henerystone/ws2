@@ -81,47 +81,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Database-and-SQLAlchemy">Database and SQLAlchemy<a class="anchor-link" href="#Database-and-SQLAlchemy"> </a></h1><blockquote><p>In this blog we will explore using programs with data, focused on Databases.  We will use SQLite Database to learn more about using Programs with Data.</p>
-</blockquote>
-<ul>
-<li><p>College Board talks about ideas like</p>
-<ul>
-<li>Program Usage. "iterative and interactive way when processing information"</li>
-<li>Managing Data.  "classifying data are part of the process in using programs", "data files in a Table"</li>
-<li>Insight "insight and knowledge can be obtained from ...  digitally represented information"</li>
-<li>Filter systems. 'tools for finding information and recognizing patterns"</li>
-<li>Application. "the preserve has two databases", "an employee wants to count the number of book"</li>
-</ul>
-</li>
-<li><p>PBL, Databases, Iterative/OOP</p>
-<ul>
-<li>Iterative. Refers to a sequence of instructions or code being repeated until a specific end result is achieved</li>
-<li>OOP. A computer programming model that organizes software design around data, or objects, rather than functions and logic</li>
-<li>SQL. Structured Query Language, abbreviated as SQL, is a language used in programming, managing, and structuring data </li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Imports-and-Flask-Objects">Imports and Flask Objects<a class="anchor-link" href="#Imports-and-Flask-Objects"> </a></h2><blockquote><p>Defines and key object creations</p>
-</blockquote>
-<ul>
-<li>Comment on where you have observed these working?</li>
-</ul>
-<ol>
-<li>Flask app object</li>
-<li>SQLAlchemy object</li>
-</ol>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -163,20 +122,12 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-Definition">Model Definition<a class="anchor-link" href="#Model-Definition"> </a></h2><blockquote><p>Define columns, initialization, and CRUD methods for users table in sqlite.db</p>
-</blockquote>
-<ul>
-<li>Comment on these items in the class</li>
-<li>class User purpose</li>
-<li>db.Model inheritance</li>
-<li><em>init</em> method</li>
-<li>@property, @<column>.setter&lt;/li&gt;
-<li>additional methods</li>
-&lt;/ul&gt;
+<p>I see the app object running before all the code. It seems like it's an initialization process.
+SQAlchemy db object also is a way to shorten the code.</p>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -229,12 +180,12 @@ window.onload = wrap_img;
     <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
     
-    <span class="c1"># a getter method, extracts email from object</span>
+    <span class="c1"># a getter method, extracts uid from object</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span>
     
-    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="c1"># a setter function, allows uid to be updated after initial object creation</span>
     <span class="nd">@uid</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
@@ -247,36 +198,37 @@ window.onload = wrap_img;
     <span class="k">def</span> <span class="nf">password</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;...&quot;</span> <span class="c1"># because of security only show 1st characters</span>
 
-    <span class="c1"># update password, this is conventional setter</span>
+    <span class="c1"># update password, this is conventional method used for setter</span>
     <span class="k">def</span> <span class="nf">set_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Create a hashed password.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">generate_password_hash</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;sha256&#39;</span><span class="p">)</span>
 
-    <span class="c1"># check password parameter versus stored/encrypted password</span>
+    <span class="c1"># check password parameter against stored/encrypted password</span>
     <span class="k">def</span> <span class="nf">is_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Check against hashed password.&quot;&quot;&quot;</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">check_password_hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span>
     
-    <span class="c1"># dob property is returned as string, to avoid unfriendly outcomes</span>
+    <span class="c1"># dob property is returned as string, a string represents date outside object</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">dob_string</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">dob_string</span>
     
-    <span class="c1"># dob should be have verification for type date</span>
+    <span class="c1"># dob setter, verifies date type before it is set or default to today</span>
     <span class="nd">@dob</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dob</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>  <span class="c1"># not a date type     </span>
             <span class="n">dob</span> <span class="o">=</span> <span class="n">date</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
     
+    <span class="c1"># age is calculated field, age is returned according to date of birth</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
     
-    <span class="c1"># output content using str(object) in human readable form, uses getter</span>
+    <span class="c1"># output content using str(object) is in human readable form</span>
     <span class="c1"># output content using json dumps, this is ready for API response</span>
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -314,6 +266,7 @@ window.onload = wrap_img;
             <span class="bp">self</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="n">uid</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
         <span class="k">return</span> <span class="bp">self</span>
 
@@ -333,6 +286,17 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>class User defines what information a user needs.
+db.model inheritance is inside class User. I think it's grabbing from the first code cell for formatting or something
+init method seems to put every piece of information under one person.
+@property and @setter grab the information to be set and allow it to be updated in the future.
+create, read, update, delete methods are self explanitory=&gt; they define methods to do each of those things.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Initial-Data">Initial Data<a class="anchor-link" href="#Initial-Data"> </a></h2><blockquote><p>Uses SQLALchemy db.create_all() to initialize rows into sqlite.db</p>
@@ -365,7 +329,7 @@ window.onload = wrap_img;
         <span class="sd">&quot;&quot;&quot;Create database and tables&quot;&quot;&quot;</span>
         <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
         <span class="sd">&quot;&quot;&quot;Tester data for table&quot;&quot;&quot;</span>
-        <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Thomas Edison&#39;</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">&#39;toby&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;123toby&#39;</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">1847</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+        <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Thomas Edison&#39;</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">&#39;toby&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;123toby&#39;</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1847</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
         <span class="n">u2</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Nikola Tesla&#39;</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">&#39;niko&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;123niko&#39;</span><span class="p">)</span>
         <span class="n">u3</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Alexander Graham Bell&#39;</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">&#39;lex&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;123lex&#39;</span><span class="p">)</span>
         <span class="n">u4</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Eli Whitney&#39;</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">&#39;whit&#39;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;123whit&#39;</span><span class="p">)</span>
@@ -397,23 +361,14 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">&lt;cell line: 30&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26&#39;&gt;27&lt;/a&gt;</span>                 &#39;&#39;&#39;fails with bad or duplicate data&#39;&#39;&#39;
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=27&#39;&gt;28&lt;/a&gt;</span>                 print(f&#34;Records exist uid {user.uid}, or error.&#34;)
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span> initUsers()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 8</span> in <span class="ansi-cyan-fg">initUsers</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span> db.create_all()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span> &#34;&#34;&#34;Tester data for table&#34;&#34;&#34;
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span> u1 = User(name=&#39;Thomas Edison&#39;, uid=&#39;toby&#39;, password=&#39;123toby&#39;, dob=date(1847, 2, 11))
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10&#39;&gt;11&lt;/a&gt;</span> u2 = User(name=&#39;Nikola Tesla&#39;, uid=&#39;niko&#39;, password=&#39;123niko&#39;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X10sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> u3 = User(name=&#39;Alexander Graham Bell&#39;, uid=&#39;lex&#39;, password=&#39;123lex&#39;)
-
-<span class="ansi-red-fg">NameError</span>: name &#39;date&#39; is not defined</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created new uid toby
+Created new uid niko
+Created new uid lex
+Created new uid whit
+Created new uid indi
+Created new uid raven
+</pre>
 </div>
 </div>
 
@@ -425,15 +380,9 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Check-for-given-Credentials-in-users-table-in-sqlite.db">Check for given Credentials in users table in sqlite.db<a class="anchor-link" href="#Check-for-given-Credentials-in-users-table-in-sqlite.db"> </a></h2><blockquote><p>Use of ORM Query object and custom methods to identify user to credentials uid and password</p>
-</blockquote>
-<ul>
-<li>Comment on purpose of following</li>
-</ul>
-<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
-</ol>
+<p>Create All Tables from db Object creates the database.
+User Object Constructors defines information for a person
+Try / Except will create the user or give an error if their uid already exists.</p>
 
 </div>
 </div>
@@ -470,23 +419,6 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Create-a-new-User-in-table-in-Sqlite.db">Create a new User in table in Sqlite.db<a class="anchor-link" href="#Create-a-new-User-in-table-in-Sqlite.db"> </a></h2><blockquote><p>Uses SQLALchemy and custom user.create() method to add row.</p>
-</blockquote>
-<ul>
-<li>Comment on purpose of following</li>
-</ul>
-<ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
-</ol>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -542,45 +474,10 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=23&#39;&gt;24&lt;/a&gt;</span> try:
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=24&#39;&gt;25&lt;/a&gt;</span>     user.dob = datetime.strptime(dob, &#39;%Y-%m-%d&#39;).date()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25&#39;&gt;26&lt;/a&gt;</span> except ValueError:
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/_strptime.py:568</span>, in <span class="ansi-cyan-fg">_strptime_datetime</span><span class="ansi-blue-fg">(cls, data_string, format)</span>
-<span class="ansi-green-intense-fg ansi-bold">    566</span> &#34;&#34;&#34;Return a class cls instance based on the input string and the
-<span class="ansi-green-intense-fg ansi-bold">    567</span> format string.&#34;&#34;&#34;
-<span class="ansi-green-fg">--&gt; 568</span> tt, fraction, gmtoff_fraction = _strptime(data_string, format)
-<span class="ansi-green-intense-fg ansi-bold">    569</span> tzname, gmtoff = tt[-2:]
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/_strptime.py:349</span>, in <span class="ansi-cyan-fg">_strptime</span><span class="ansi-blue-fg">(data_string, format)</span>
-<span class="ansi-green-intense-fg ansi-bold">    348</span> if not found:
-<span class="ansi-green-fg">--&gt; 349</span>     raise ValueError(&#34;time data %r does not match format %r&#34; %
-<span class="ansi-green-intense-fg ansi-bold">    350</span>                      (data_string, format))
-<span class="ansi-green-intense-fg ansi-bold">    351</span> if len(data_string) != found.end():
-
-<span class="ansi-red-fg">ValueError</span>: time data &#39;&#39; does not match format &#39;%Y-%m-%d&#39;
-
-During handling of the above exception, another exception occurred:
-
-<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 38&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=34&#39;&gt;35&lt;/a&gt;</span>         except:  # error raised if object not created
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=35&#39;&gt;36&lt;/a&gt;</span>             print(&#34;Unknown error uid {uid}&#34;)
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=37&#39;&gt;38&lt;/a&gt;</span> create()
-
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=25&#39;&gt;26&lt;/a&gt;</span> except ValueError:
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=26&#39;&gt;27&lt;/a&gt;</span>     user.dob = datetime.today()
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=27&#39;&gt;28&lt;/a&gt;</span>     print(f&#34;Invalid date {dob} require YYYY-mm-dd, date defaulted to {user.dbo}&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=29&#39;&gt;30&lt;/a&gt;</span> # write object to database
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/shreyas/vscode/ws2/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sdnNjb2RlLXJlbW90ZQ%3D%3D?line=30&#39;&gt;31&lt;/a&gt;</span> with app.app_context():
-
-<span class="ansi-red-fg">AttributeError</span>: &#39;User&#39; object has no attribute &#39;dbo&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Found
+ {&#39;id&#39;: 4, &#39;name&#39;: &#39;Eli Whitney&#39;, &#39;uid&#39;: &#39;whit&#39;, &#39;dob&#39;: &#39;04-17-2023&#39;, &#39;age&#39;: 0}
+</pre>
 </div>
 </div>
 
@@ -592,15 +489,14 @@ During handling of the above exception, another exception occurred:
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Reading-users-table-in-sqlite.db">Reading users table in sqlite.db<a class="anchor-link" href="#Reading-users-table-in-sqlite.db"> </a></h2><blockquote><p>Uses SQLALchemy query.all method to read data</p>
-</blockquote>
-<ul>
-<li>Comment on purpose of following</li>
-</ul>
-<ol>
-<li>User.query.all</li>
-<li>json_ready assignment</li>
-</ol>
+<p>User.query.filter_by will sort through the users to find one with the uid it's given
+user.password will return true if the given password is equal to the password in the database</p>
+<p>user.find_by_uid() and try/except will search for a user with a given uid. if they exist the code stops, otherwise it continues.
+user = User(...) this adds the password, name and uid to the database
+user.dob and try/except will define the date of birth unless something is incorrect.
+user.create() and try/except will create the object. except will run if there's an error.</p>
+<p>User.query.all grabs all users in the database
+json_ready assignment will put the users from the database in a new format</p>
 
 </div>
 </div>
@@ -629,21 +525,37 @@ During handling of the above exception, another exception occurred:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
-<li>Add Update functionality to this blog.</li>
-<li>Add Delete functionality to this blog.</li>
-</ul>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">crud</span><span class="p">():</span>
+    <span class="n">uinp</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Create, Read, Update or Delete?&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">uinp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;create&quot;</span><span class="p">:</span>
+        <span class="n">create</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">uinp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;read&quot;</span><span class="p">:</span>
+        <span class="n">read</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">uinp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;update&quot;</span><span class="p">:</span>
+        <span class="n">update</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">uinp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;delete&quot;</span><span class="p">:</span>
+        <span class="n">delete</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">uinp</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;stop&quot;</span> <span class="ow">or</span> <span class="s2">&quot;done&quot;</span><span class="p">:</span> <span class="k">return</span>
+    <span class="n">crud</span><span class="p">()</span>
+<span class="n">crud</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
-</div>
-</div>
-&lt;/div&gt;
- 
+    
 
-</column></li></ul></div></div></div></div>
+</div>
+
 
 
       </div>
