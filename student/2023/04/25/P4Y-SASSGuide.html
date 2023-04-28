@@ -116,22 +116,28 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Classwork:">Classwork:<a class="anchor-link" href="#Classwork:"> </a></h1><h3 id="What-are-5-Basic-UI-Elements?:">What are 5 Basic UI Elements?:<a class="anchor-link" href="#What-are-5-Basic-UI-Elements?:"> </a></h3><ol>
-<li>2.
-3.</li>
-<li></li>
-<li></li>
+<li>Color </li>
+<li>Font</li>
+<li>Layout</li>
+<li>Icons</li>
+<li>Size</li>
 </ol>
 <h3 id="In-your-own-words,-explain-what-SASS-does:">In your own words, explain what SASS does:<a class="anchor-link" href="#In-your-own-words,-explain-what-SASS-does:"> </a></h3><ul>
-<li><p>### What are some benefits to SASS?:</p>
-</li>
-<li></li>
+<li>Helps make styling websites and apps easier.</li>
+</ul>
+<h3 id="What-are-some-benefits-to-SASS?:">What are some benefits to SASS?:<a class="anchor-link" href="#What-are-some-benefits-to-SASS?:"> </a></h3><ul>
+<li>Easy to use</li>
+<li>Versatile</li>
 </ul>
 <h3 id="Describe/Explain-one-of-the-more-&quot;advanced&quot;-SASS-properties-below-in-detail:">Describe/Explain one of the more "advanced" SASS properties below in detail:<a class="anchor-link" href="#Describe/Explain-one-of-the-more-&quot;advanced&quot;-SASS-properties-below-in-detail:"> </a></h3><ul>
-<li><p>## <a href="https://anicricket.github.io/tmv4/_pages/numberguesser_v3.html">Link to Number Guesser Game</a></p>
-</li>
+<li>Animation allows the user to create animated images in a program</li>
 </ul>
-<h3 id="How-does-the-number-guesser-game-work?">How does the number guesser game work?<a class="anchor-link" href="#How-does-the-number-guesser-game-work?"> </a></h3><p>-</p>
-<h3 id="Explain-how-SASS-can-be-used-to-make-the-number-guesser-game-look-more-visually-appealing?">Explain how SASS can be used to make the number guesser game look more visually appealing?<a class="anchor-link" href="#Explain-how-SASS-can-be-used-to-make-the-number-guesser-game-look-more-visually-appealing?"> </a></h3><p>-</p>
+<h2 id="Link-to-Number-Guesser-Game"><a href="https://anicricket.github.io/tmv4/_pages/numberguesser_v3.html">Link to Number Guesser Game</a><a class="anchor-link" href="#Link-to-Number-Guesser-Game"> </a></h2><h3 id="How-does-the-number-guesser-game-work?">How does the number guesser game work?<a class="anchor-link" href="#How-does-the-number-guesser-game-work?"> </a></h3><ul>
+<li>A random number is generated and compared to the user's answer to see if they are the same.</li>
+</ul>
+<h3 id="Explain-how-SASS-can-be-used-to-make-the-number-guesser-game-look-more-visually-appealing?">Explain how SASS can be used to make the number guesser game look more visually appealing?<a class="anchor-link" href="#Explain-how-SASS-can-be-used-to-make-the-number-guesser-game-look-more-visually-appealing?"> </a></h3><ul>
+<li>its used to impliment animations, change font and the size of the font.</li>
+</ul>
 
 </div>
 </div>
@@ -139,16 +145,39 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks---Insert-any-screenshots,-code-segments,-etc.-that-you-need-to-in-order-to-demonstrate-an-understanding-of-the-hacks">Hacks - Insert any screenshots, code segments, etc. that you need to in order to demonstrate an understanding of the hacks<a class="anchor-link" href="#Hacks---Insert-any-screenshots,-code-segments,-etc.-that-you-need-to-in-order-to-demonstrate-an-understanding-of-the-hacks"> </a></h1><h2 id="Hacks-Part-1">Hacks Part 1<a class="anchor-link" href="#Hacks-Part-1"> </a></h2><ol>
-<li>Add your own element to your own repository to make it unique (0.9)</li>
+<li>Add your own element to your own repository to make it unique (0.9)
+added image in front of fastpages and interesting favicon to make it unique</li>
 </ol>
 <h2 id="Hacks-Part-2">Hacks Part 2<a class="anchor-link" href="#Hacks-Part-2"> </a></h2><ol>
-<li>Add the style change button to your own github page (0.9)<ul>
+<li><p>Add the style change button to your own github page (0.9)</p>
+<ul>
 <li>Change the button to your own styles </li>
 <li>See if you can let make it change to multiple different styles (we understand that it is hard to create multiple distinct styles so you are only required to make it clear you have at least three different styles at can be changed)</li>
 </ul>
 </li>
-<li>Extra: Try and incorporate something you learned in the lesson into your CPT Project (0.1)</li>
+<li><p>Extra: Try and incorporate something you learned in the lesson into your CPT Project (0.1)</p>
+</li>
 </ol>
+<h1 id="Theme-Changer">Theme Changer<a class="anchor-link" href="#Theme-Changer"> </a></h1><p><head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../assets/css/fastpages-styles.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode1.css" id="theme-link" />
+</head></p>
+<p><body>
+    <button id="theme-toggle">Toggle Theme</button>
+    <script>
+        const toggleButton = document.querySelector('#theme-toggle');
+        const themeLink = document.querySelector('#theme-link');
+        toggleButton.addEventListener('click', () => {
+            if (themeLink.getAttribute('href') === '../assets/css/fastpages-styles.css') {
+                themeLink.setAttribute('href', '../assets/css/dark-mode1.css');
+            } else {
+                themeLink.setAttribute('href', '../assets/css/fastpages-styles.css');
+            }
+        });
+    </script>
+</body>
+&lt;/html&gt;</p>
 <h2 id="Hacks-Part-3">Hacks Part 3<a class="anchor-link" href="#Hacks-Part-3"> </a></h2><ol>
 <li>Add SASS to Number Guesser Game provided (0.9) or create your own Javascript game/application and add SASS to it (0.9+)</li>
 <li>We will collectively decide on the "best" game/app and award potential seed. </li>
