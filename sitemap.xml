@@ -235,6 +235,9 @@
 <loc>https://henerystone.github.io/ws2/chessp</loc>
 </url>
 <url>
+<loc>https://henerystone.github.io/ws2/numguess/</loc>
+</url>
+<url>
 <loc>https://henerystone.github.io/ws2/about/</loc>
 </url>
 <url>
@@ -254,9 +257,5 @@
 </url>
 <url>
 <loc>https://henerystone.github.io/ws2/page4/</loc>
-</url>
-<url>
-<loc>https://henerystone.github.io/ws2/_pages/Number_Guesser.html</loc>
-<lastmod>2023-04-27T22:55:08-05:00</lastmod>
 </url>
 </urlset>

@@ -654,7 +654,9 @@
   
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "About Me",
           "content": "This is a website centered on chess. I like chess. Chess is cool. Currently, I am a student at Del Norte High School. This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://henerystone.github.io/ws2/about/",
@@ -695,7 +697,7 @@
   
 
   
-      ,"page16": {
+      ,"page17": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://henerystone.github.io/ws2/robots.txt",
